@@ -1,6 +1,6 @@
 //Maya ASCII 2025ff03 scene
 //Name: Stool.ma
-//Last modified: Fri, Oct 24, 2025 02:43:31 PM
+//Last modified: Fri, Oct 24, 2025 02:45:59 PM
 //Codeset: 1252
 requires maya "2025ff03";
 requires "stereoCamera" "10.0";
@@ -12,7 +12,7 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202409190603-cbdc5a7e54";
 fileInfo "osv" "Windows 11 Enterprise v2009 (Build: 26100)";
-fileInfo "UUID" "B19F6262-4290-2174-F33E-0F9AB7CE11C4";
+fileInfo "UUID" "DFC9A811-4D74-9A6A-F662-BC86818F1A1F";
 fileInfo "license" "education";
 createNode transform -n "Stool";
 	rename -uid "A25E43C4-4714-1D2F-5CF4-4196BE8D9A21";
@@ -974,8 +974,8 @@ createNode mesh -n "polySurfaceShape1" -p "Stool";
 createNode transform -s -n "persp";
 	rename -uid "D4444C04-4FB7-74BF-C095-C3BD88B54410";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 7.9624875299840863 5.7378909956652135 20.172862399225515 ;
-	setAttr ".r" -type "double3" -3.3383527295941406 15.799999999988406 2.0659005436215467e-16 ;
+	setAttr ".t" -type "double3" 6.7221878867787588 11.46466704270113 19.295380152244171 ;
+	setAttr ".r" -type "double3" -19.53835272959444 12.999999999988603 -8.1605408366183993e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "F5F3536A-422F-4973-9D9A-E8B25F398BC7";
 	setAttr -k off ".v" no;
