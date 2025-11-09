@@ -1,31 +1,32 @@
-//Maya ASCII 2025ff03 scene
+//Maya ASCII 2026 scene
 //Name: Scene 2.ma
-//Last modified: Fri, Nov 07, 2025 03:28:08 PM
+//Last modified: Sun, Nov 09, 2025 02:02:06 PM
 //Codeset: 1252
 file -rdi 1 -ns "Mug13" -rfn "MugRN" -op "v=0;" -typ "mayaAscii" "C:/Users/11099963/Documents/GitHub/Essentials/DAGV1100and1200/Maya//scenes/Mug.ma";
 file -r -ns "Mug13" -dr 1 -rfn "MugRN" -op "v=0;" -typ "mayaAscii" "C:/Users/11099963/Documents/GitHub/Essentials/DAGV1100and1200/Maya//scenes/Mug.ma";
-requires maya "2025ff03";
+requires maya "2026";
 requires "stereoCamera" "10.0";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" -nodeType "aiImagerDenoiserOidn"
-		 "mtoa" "5.4.5";
+		 "mtoa" "5.5.3";
+requires "stereoCamera" "10.0";
 currentUnit -l centimeter -a degree -t film;
 fileInfo "application" "maya";
-fileInfo "product" "Maya 2025";
-fileInfo "version" "2025";
-fileInfo "cutIdentifier" "202409190603-cbdc5a7e54";
-fileInfo "osv" "Windows 11 Enterprise v2009 (Build: 26100)";
-fileInfo "UUID" "85549F7D-457A-B091-B429-41A4692E4400";
+fileInfo "product" "Maya 2026";
+fileInfo "version" "2026";
+fileInfo "cutIdentifier" "202507081222-4d6919b75c";
+fileInfo "osv" "Windows 11 Home v2009 (Build: 26200)";
+fileInfo "UUID" "F004D495-42D3-9276-0F78-E783663EAD01";
 fileInfo "license" "education";
 createNode transform -s -n "persp";
 	rename -uid "2F4FEB29-4955-C5FE-E7F3-C8ABE7981416";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 33.099767462668993 24.971764353227321 93.068616142865679 ;
-	setAttr ".r" -type "double3" -8.7383527296035304 19.399999999994975 2.1075052207079917e-16 ;
+	setAttr ".t" -type "double3" 27.955271989132804 13.89362174238353 80.27458763931412 ;
+	setAttr ".r" -type "double3" -3.3383527296035735 18.599999999995084 -1.048698529577777e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "F7B902AF-469D-0CBF-3819-B9A164614C36";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 80.501568606376637;
+	setAttr ".coi" 64.936861389362093;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -12297,7 +12298,7 @@ createNode mesh -n "polySurfaceShape1" -p "Mug16";
 createNode transform -n "Mug17";
 	rename -uid "22144632-4C88-6FAE-7E49-269BFF228AB5";
 	setAttr ".t" -type "double3" 32.713762454605188 6.3642209235478138 -14.17111308713794 ;
-	setAttr ".r" -type "double3" 0 53.243013127762822 0 ;
+	setAttr ".r" -type "double3" 0 53.243013127762829 0 ;
 	setAttr ".s" -type "double3" 0.76798137946149558 1.0481779902149104 0.76798137946149558 ;
 	setAttr ".rp" -type "double3" 0.00027731326030056014 0.23083723048927351 0.24140762760500639 ;
 	setAttr ".rpt" -type "double3" 8.3266726846886741e-17 0 -2.3037127760971998e-15 ;
@@ -32009,7 +32010,7 @@ createNode mesh -n "polySurfaceShape1" -p "Mug23";
 createNode transform -n "Mug24";
 	rename -uid "AAA62070-4ACD-E58B-2CB4-C2AEE2C61ECB";
 	setAttr ".t" -type "double3" 2.7478956837682382 6.6942588473785758 46.258061797570321 ;
-	setAttr ".r" -type "double3" 93.22871698925465 180.21028427089871 107.03486654511632 ;
+	setAttr ".r" -type "double3" 93.22871698925465 180.21028427089871 107.03486654511633 ;
 	setAttr ".s" -type "double3" 0.76798137946149558 1.0481779902149104 0.76798137946149558 ;
 	setAttr ".rp" -type "double3" 0.00027731326030056014 0.23083723048927351 0.24140762760500639 ;
 	setAttr ".rpt" -type "double3" 3.3861802251067274e-15 -5.9674487573602164e-15 -1.1102230246251565e-14 ;
@@ -46103,7 +46104,7 @@ createNode mesh -n "pCubeShape3" -p "pCube3";
 createNode transform -n "Mug29";
 	rename -uid "ABD8A0A7-41CC-93C1-A542-2885AA49394B";
 	setAttr ".t" -type "double3" -22.539054721329201 14.677728688313051 28.240735014262992 ;
-	setAttr ".r" -type "double3" -3.1123874291581055 -278.12073489902457 177.05990882859751 ;
+	setAttr ".r" -type "double3" -3.1123874291581055 -278.12073489902463 177.05990882859751 ;
 	setAttr ".s" -type "double3" 0.76798137946149558 1.0481779902149104 0.76798137946149558 ;
 	setAttr ".rp" -type "double3" 0.00027731326030056014 0.23083723048927351 0.24140762760500639 ;
 	setAttr ".rpt" -type "double3" -6.9388939039072284e-16 -7.9380946260698693e-15 -2.7478019859472624e-15 ;
@@ -54551,7 +54552,7 @@ createNode mesh -n "polySurfaceShape1" -p "Mug31";
 createNode transform -n "Mug32";
 	rename -uid "4590025F-43B1-3AC6-EF9E-C8AE5CBB2E05";
 	setAttr ".t" -type "double3" -22.962838603062227 14.677728688313051 24.851870815545851 ;
-	setAttr ".r" -type "double3" -3.1123874291581055 -278.12073489902457 177.05990882859751 ;
+	setAttr ".r" -type "double3" -3.1123874291581055 -278.12073489902463 177.05990882859751 ;
 	setAttr ".s" -type "double3" 0.76798137946149558 1.0481779902149104 0.76798137946149558 ;
 	setAttr ".rp" -type "double3" 0.00027731326030056014 0.23083723048927351 0.24140762760500639 ;
 	setAttr ".rpt" -type "double3" -6.9388939039072284e-16 -7.9380946260698693e-15 -2.7478019859472624e-15 ;
@@ -60183,7 +60184,7 @@ createNode mesh -n "polySurfaceShape1" -p "Mug33";
 createNode transform -n "Mug34";
 	rename -uid "84F617B9-4379-8A2B-70DD-7A98445FDB66";
 	setAttr ".t" -type "double3" -22.498807817696598 14.677728688313051 22.511670050659557 ;
-	setAttr ".r" -type "double3" -94.40906621106916 -270.44074679511181 85.731951399226475 ;
+	setAttr ".r" -type "double3" -94.409066211069174 -270.44074679511181 85.731951399226475 ;
 	setAttr ".s" -type "double3" 0.76798137946149558 1.0481779902149104 0.76798137946149558 ;
 	setAttr ".rp" -type "double3" 0.00027731326030056014 0.23083723048927351 0.24140762760500639 ;
 	setAttr ".rpt" -type "double3" -6.3837823915946501e-16 -7.6050277186823223e-15 -2.9143354396410359e-15 ;
@@ -74263,7 +74264,7 @@ createNode mesh -n "polySurfaceShape1" -p "Mug40";
 createNode transform -n "Mug41";
 	rename -uid "B3D54553-44C4-B93D-D745-74B1366D6D43";
 	setAttr ".t" -type "double3" -22.962838603062227 14.677728688313051 12.881185808790606 ;
-	setAttr ".r" -type "double3" -3.1123874291581055 -278.12073489902457 177.05990882859751 ;
+	setAttr ".r" -type "double3" -3.1123874291581055 -278.12073489902463 177.05990882859751 ;
 	setAttr ".s" -type "double3" 0.76798137946149558 1.0481779902149104 0.76798137946149558 ;
 	setAttr ".rp" -type "double3" 0.00027731326030056014 0.23083723048927351 0.24140762760500639 ;
 	setAttr ".rpt" -type "double3" -6.9388939039072284e-16 -7.9380946260698693e-15 -2.7478019859472624e-15 ;
@@ -79895,7 +79896,7 @@ createNode mesh -n "polySurfaceShape1" -p "Mug42";
 createNode transform -n "Mug43";
 	rename -uid "1D23CF79-4ADB-383D-B5DB-359BDF5BB890";
 	setAttr ".t" -type "double3" -22.498807817696598 14.677728688313051 10.540985043904312 ;
-	setAttr ".r" -type "double3" -94.40906621106916 -270.44074679511181 85.731951399226475 ;
+	setAttr ".r" -type "double3" -94.409066211069174 -270.44074679511181 85.731951399226475 ;
 	setAttr ".s" -type "double3" 0.76798137946149558 1.0481779902149104 0.76798137946149558 ;
 	setAttr ".rp" -type "double3" 0.00027731326030056014 0.23083723048927351 0.24140762760500639 ;
 	setAttr ".rpt" -type "double3" -6.3837823915946501e-16 -7.6050277186823223e-15 -2.9143354396410359e-15 ;
@@ -85525,15 +85526,15 @@ createNode mesh -n "polySurfaceShape1" -p "Mug44";
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "52FDBB80-4210-2B78-4317-14BE6440A958";
+	rename -uid "9DAB9C91-40C7-B11A-AE0C-4DB3F600531E";
 	setAttr -s 3 ".lnk";
 	setAttr -s 3 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "59EABC5D-4694-C29B-D77E-8D822F170C04";
+	rename -uid "B4F3F7D6-43E9-2E62-4105-F99D30C96C39";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "08887E0B-454F-5650-CDFF-41B4B63BCF30";
+	rename -uid "98402E1C-4FC0-DC98-53B2-5A96F8878369";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "96D6ABA6-438C-682F-8C98-B29D6F2F8E5F";
+	rename -uid "C0B28C10-4A08-0F68-B41E-068D7CE6EB5F";
 	setAttr ".cdl" 3;
 	setAttr -s 4 ".dli[1:3]"  1 2 3;
 	setAttr -s 3 ".dli";
@@ -85541,7 +85542,7 @@ createNode displayLayer -n "defaultLayer";
 	rename -uid "32732147-41C6-A659-7D77-718FE5EC0748";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "680B85A4-44F5-1CDF-55C3-3B8D946E4853";
+	rename -uid "6AF7C4E9-4D45-D0F4-636F-998B7927DBCE";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "454B1ACF-43B5-F1E8-DA2C-A687193018D2";
 	setAttr ".g" yes;
@@ -85551,17 +85552,17 @@ createNode script -n "uiConfigurationScriptNode";
 		"// Maya Mel UI Configuration File.\n//\n//  This script is machine generated.  Edit at your own risk.\n//\n//\n\nglobal string $gMainPane;\nif (`paneLayout -exists $gMainPane`) {\n\n\tglobal int $gUseScenePanelConfig;\n\tint    $useSceneConfig = $gUseScenePanelConfig;\n\tint    $nodeEditorPanelVisible = stringArrayContains(\"nodeEditorPanel1\", `getPanel -vis`);\n\tint    $nodeEditorWorkspaceControlOpen = (`workspaceControl -exists nodeEditorPanel1Window` && `workspaceControl -q -visible nodeEditorPanel1Window`);\n\tint    $menusOkayInPanels = `optionVar -q allowMenusInPanels`;\n\tint    $nVisPanes = `paneLayout -q -nvp $gMainPane`;\n\tint    $nPanes = 0;\n\tstring $editorName;\n\tstring $panelName;\n\tstring $itemFilterName;\n\tstring $panelConfig;\n\n\t//\n\t//  get current state of the UI\n\t//\n\tsceneUIReplacement -update $gMainPane;\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Top View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Top View\")) -mbv $menusOkayInPanels  $panelName;\n"
 		+ "\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"|top\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"wireframe\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n"
 		+ "            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n"
-		+ "            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -excludeObjectPreset \"All\" \n            -shadows 0\n            -captureSequenceNumber -1\n            -width 555\n            -height 330\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n"
+		+ "            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -excludeObjectPreset \"All\" \n            -shadows 0\n            -captureSequenceNumber -1\n            -width 330\n            -height 363\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n"
 		+ "\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Side View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Side View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"|side\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"wireframe\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n"
 		+ "            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n"
 		+ "            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -excludeObjectPreset \"All\" \n"
-		+ "            -shadows 0\n            -captureSequenceNumber -1\n            -width 555\n            -height 329\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Front View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Front View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"|front\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"wireframe\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n"
+		+ "            -shadows 0\n            -captureSequenceNumber -1\n            -width 330\n            -height 362\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Front View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Front View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"|front\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"wireframe\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n"
 		+ "            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n"
 		+ "            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n"
-		+ "            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -excludeObjectPreset \"All\" \n            -shadows 0\n            -captureSequenceNumber -1\n            -width 555\n            -height 329\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Persp View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Persp View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n"
+		+ "            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -excludeObjectPreset \"All\" \n            -shadows 0\n            -captureSequenceNumber -1\n            -width 330\n            -height 362\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Persp View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Persp View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n"
 		+ "        modelEditor -e \n            -camera \"|persp\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 1\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 1\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n"
 		+ "            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n"
-		+ "            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -excludeObjectPreset \"All\" \n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1117\n            -height 706\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n"
+		+ "            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -excludeObjectPreset \"All\" \n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1117\n            -height 684\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n"
 		+ "\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"ToggledOutliner\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"ToggledOutliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -docTag \"isolOutln_fromSeln\" \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 1\n            -showReferenceMembers 1\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -organizeByClip 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n            -showParentContainers 0\n            -showContainerContents 1\n"
 		+ "            -ignoreDagHierarchy 0\n            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n            -showLeafs 1\n            -showNumericAttrsOnly 0\n            -highlightActive 1\n            -autoSelectNewObjects 0\n            -doNotSelectNewObjects 0\n            -dropIsParent 1\n            -transmitFilters 0\n            -setFilter \"defaultSetFilter\" \n            -showSetMembers 1\n            -allowMultiSelection 1\n            -alwaysToggleSelect 0\n            -directSelect 0\n            -isSet 0\n            -isSetMember 0\n            -showUfeItems 1\n            -displayMode \"DAG\" \n            -expandObjects 0\n            -setsIgnoreFilters 1\n            -containersIgnoreFilters 0\n            -editAttrName 0\n            -showAttrValues 0\n            -highlightSecondary 0\n            -showUVAttrsOnly 0\n            -showTextureNodesOnly 0\n            -attrAlphaOrder \"default\" \n            -animLayerFilterOptions \"allAffecting\" \n            -sortOrder \"none\" \n"
 		+ "            -longNames 0\n            -niceNames 1\n            -selectCommand \"print(\\\"\\\")\" \n            -showNamespace 1\n            -showPinIcons 0\n            -mapMotionTrails 0\n            -ignoreHiddenAttribute 0\n            -ignoreOutlinerColor 0\n            -renderFilterVisible 0\n            -renderFilterIndex 0\n            -selectionOrder \"chronological\" \n            -expandAttribute 0\n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"Outliner\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"Outliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 0\n            -showReferenceMembers 0\n            -showAttributes 0\n            -showConnected 0\n"
@@ -85588,8 +85589,8 @@ createNode script -n "uiConfigurationScriptNode";
 		+ "                -bumpResolution 4 4 \n                -textureCompression 0\n                -transparencyAlgorithm \"frontAndBackCull\" \n                -transpInShadows 0\n                -cullingOverride \"none\" \n                -lowQualityLighting 0\n                -maximumNumHardwareLights 0\n                -occlusionCulling 0\n                -shadingModel 0\n                -useBaseRenderer 0\n                -useReducedRenderer 0\n                -smallObjectCulling 0\n                -smallObjectThreshold -1 \n                -interactiveDisableShadows 0\n                -interactiveBackFaceCull 0\n                -sortTransparent 1\n                -controllers 1\n                -nurbsCurves 1\n                -nurbsSurfaces 1\n                -polymeshes 1\n                -subdivSurfaces 1\n                -planes 1\n                -lights 1\n                -cameras 1\n                -controlVertices 1\n                -hulls 1\n                -grid 1\n                -imagePlane 1\n                -joints 1\n                -ikHandles 1\n"
 		+ "                -deformers 1\n                -dynamics 1\n                -particleInstancers 1\n                -fluids 1\n                -hairSystems 1\n                -follicles 1\n                -nCloths 1\n                -nParticles 1\n                -nRigids 1\n                -dynamicConstraints 1\n                -locators 1\n                -manipulators 1\n                -pluginShapes 1\n                -dimensions 1\n                -handles 1\n                -pivots 1\n                -textures 1\n                -strokes 1\n                -motionTrails 1\n                -clipGhosts 1\n                -bluePencil 1\n                -greasePencils 0\n                -excludeObjectPreset \"All\" \n                -shadows 0\n                -captureSequenceNumber -1\n                -width 0\n                -height 0\n                -sceneRenderFilter 0\n                -displayMode \"centerEye\" \n                -viewColor 0 0 0 1 \n                -useCustomBackground 1\n                $editorName;\n            stereoCameraView -e -viewSelected 0 $editorName;\n"
 		+ "            stereoCameraView -e \n                -pluginObjects \"gpuCacheDisplayFilter\" 1 \n                $editorName; };\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\tif ($useSceneConfig) {\n        string $configName = `getPanel -cwl (localizedPanelLabel(\"Current Layout\"))`;\n        if (\"\" != $configName) {\n\t\t\tpanelConfiguration -edit -label (localizedPanelLabel(\"Current Layout\")) \n\t\t\t\t-userCreated false\n\t\t\t\t-defaultImage \"vacantCell.xP:/\"\n\t\t\t\t-image \"\"\n\t\t\t\t-sc false\n\t\t\t\t-configString \"global string $gMainPane; paneLayout -e -cn \\\"single\\\" -ps 1 100 100 $gMainPane;\"\n\t\t\t\t-removeAllPanels\n\t\t\t\t-ap false\n\t\t\t\t\t(localizedPanelLabel(\"Persp View\")) \n\t\t\t\t\t\"modelPanel\"\n"
-		+ "\t\t\t\t\t\"$panelName = `modelPanel -unParent -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels `;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 1\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 0\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 32768\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -bluePencil 1\\n    -greasePencils 0\\n    -excludeObjectPreset \\\"All\\\" \\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1117\\n    -height 706\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
-		+ "\t\t\t\t\t\"modelPanel -edit -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels  $panelName;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 1\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 0\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 32768\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -bluePencil 1\\n    -greasePencils 0\\n    -excludeObjectPreset \\\"All\\\" \\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1117\\n    -height 706\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
+		+ "\t\t\t\t\t\"$panelName = `modelPanel -unParent -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels `;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 1\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 1\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 32768\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -bluePencil 1\\n    -greasePencils 0\\n    -excludeObjectPreset \\\"All\\\" \\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1117\\n    -height 684\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
+		+ "\t\t\t\t\t\"modelPanel -edit -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels  $panelName;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 1\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 1\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 32768\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -bluePencil 1\\n    -greasePencils 0\\n    -excludeObjectPreset \\\"All\\\" \\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1117\\n    -height 684\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
 		+ "\t\t\t\t$configName;\n\n            setNamedPanelLayout (localizedPanelLabel(\"Current Layout\"));\n        }\n\n        panelHistory -e -clear mainPanelHistory;\n        sceneUIReplacement -clear;\n\t}\n\n\ngrid -spacing 5 -size 12 -divisions 5 -displayAxes yes -displayGridLines yes -displayDivisionLines yes -displayPerspectiveLabels no -displayOrthographicLabels no -displayAxesBold yes -perspectiveLabelPosition axis -orthographicLabelPosition edge;\nviewManip -drawCompass 0 -compassAngle 0 -frontParameters \"\" -homeParameters \"\" -selectionLockParameters \"\";\n}\n");
 	setAttr ".st" 3;
 createNode script -n "sceneConfigurationScriptNode";
@@ -85679,7 +85680,7 @@ createNode reference -n "MugRN";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"MugRN"
 		"MugRN" 0
-		"MugRN" 691
+		"MugRN" 42
 		2 "|Mug13:Mug" "translate" " -type \"double3\" 3.28680522168609857 6.36422092354782176 28.34715236311201636"
 		
 		2 "|Mug13:Mug" "rotate" " -type \"double3\" 0 104.63282122144715913 0"
@@ -85689,1310 +85690,34 @@ createNode reference -n "MugRN";
 		2 "|Mug13:Mug|Mug13:MugShape" "uvPivot" " -type \"double2\" 0.38274507858433593 0.88783961534500122"
 		
 		2 "Mug13:polyTweakUV7" "uvTweak" " -s 652"
-		2 "Mug13:polyTweakUV7" "uvTweak[0]" " -type \"float2\" -0.023250178 0.50293273000000005"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[1]" " -type \"float2\" -0.0044459701000000001 0.50802009999999997"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[2]" " -type \"float2\" -0.0084129870000000002 0.52993535999999997"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[3]" " -type \"float2\" -0.029087677999999999 0.52450943000000005"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[4]" " -type \"float2\" 0.0095539987 0.50933903000000003"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[5]" " -type \"float2\" 0.0090959071999999995 0.53162651999999999"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[6]" " -type \"float2\" 0.02177608 0.50869279999999995"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[7]" " -type \"float2\" 0.023861349 0.53092921000000004"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[8]" " -type \"float2\" 0.034551591 0.50696825999999995"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[9]" " -type \"float2\" 0.040490924999999997 0.52829868000000002"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[10]" " -type \"float2\" 0.047431885999999999 0.50138605000000003"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[11]" " -type \"float2\" 0.060177415999999997 0.51912367000000004"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[12]" " -type \"float2\" 0.059273034000000002 0.48825023000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[13]" " -type \"float2\" 0.077888905999999994 0.50003635999999996"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[14]" " -type \"float2\" 0.068850367999999995 0.46529304999999999"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[15]" " -type \"float2\" 0.090131490999999994 0.47175103000000002"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[16]" " -type \"float2\" 0.074614435000000007 0.43595984999999998"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[17]" " -type \"float2\" 0.096756547999999998 0.43823084000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[18]" " -type \"float2\" 0.074934423 0.40512451999999999"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[19]" " -type \"float2\" 0.097006052999999995 0.40275337999999999"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[20]" " -type \"float2\" 0.068560897999999995 0.37720171000000002"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[21]" " -type \"float2\" 0.089164971999999995 0.36917755000000002"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[22]" " -type \"float2\" 0.055768012999999998 0.35477194000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[23]" " -type \"float2\" 0.072449356000000006 0.34050086000000002"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[24]" " -type \"float2\" 0.037211657000000002 0.33995667000000002"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[25]" " -type \"float2\" 0.047027946000000001 0.32041409999999998"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[26]" " -type \"float2\" 0.014407367000000001 0.33395794000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[27]" " -type \"float2\" 0.017077981999999998 0.31197449999999999"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[28]" " -type \"float2\" -0.0076862275999999997 0.33429930000000002"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[29]" " -type \"float2\" -0.010167262999999999 0.31218912999999998"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[30]" " -type \"float2\" -0.023250178 0.33758487999999998"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[31]" " -type \"float2\" -0.027867033999999999 0.31571427000000002"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[32]" " -type \"float2\" 0.22944033 0.38884452000000003"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[33]" " -type \"float2\" 0.21387610000000001 0.38555893000000002"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[34]" " -type \"float2\" 0.21635729000000001 0.36344876999999998"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[35]" " -type \"float2\" 0.23405717000000001 0.36697408999999998"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[36]" " -type \"float2\" 0.19178265 0.38521758"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[37]" " -type \"float2\" 0.18911198000000001 0.36323412999999999"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[38]" " -type \"float2\" 0.16897841 0.39121631000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[39]" " -type \"float2\" 0.159162 0.37167372999999998"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[40]" " -type \"float2\" 0.15042193000000001 0.40603158"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[41]" " -type \"float2\" 0.13374053999999999 0.39176055999999998"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[42]" " -type \"float2\" 0.13762911999999999 0.42846139999999999"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[43]" " -type \"float2\" 0.11702493 0.42043736999999998"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[44]" " -type \"float2\" 0.13125550999999999 0.45638417999999997"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[45]" " -type \"float2\" 0.109184 0.45401299000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[46]" " -type \"float2\" 0.13157558 0.48721966"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[47]" " -type \"float2\" 0.10943338 0.48949048000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[48]" " -type \"float2\" 0.13733956 0.51655262999999996"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[49]" " -type \"float2\" 0.11605841 0.52301072999999998"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[50]" " -type \"float2\" 0.14691688 0.53950989000000005"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[51]" " -type \"float2\" 0.12830101999999999 0.55129605999999998"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[52]" " -type \"float2\" 0.15875818 0.55264568000000003"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[53]" " -type \"float2\" 0.14601262000000001 0.57038343000000002"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[54]" " -type \"float2\" 0.17163832000000001 0.55822795999999997"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[55]" " -type \"float2\" 0.16569892999999999 0.57955825000000005"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[56]" " -type \"float2\" 0.18441382000000001 0.55995249999999996"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[57]" " -type \"float2\" 0.18232867 0.58218879000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[58]" " -type \"float2\" 0.19663595 0.56059866999999997"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[59]" " -type \"float2\" 0.19709404 0.58288622000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[60]" " -type \"float2\" 0.21063593 0.55927979999999999"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[61]" " -type \"float2\" 0.21460294999999999 0.58119505999999999"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[62]" " -type \"float2\" 0.22944033 0.55419242000000002"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[63]" " -type \"float2\" 0.23527770000000001 0.57576912999999996"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[64]" " -type \"float2\" -0.11385571 0.81217706000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[65]" " -type \"float2\" -0.14528663 0.81217706000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[66]" " -type \"float2\" -0.14528663 0.58667833000000003"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[67]" " -type \"float2\" -0.11385571 0.58667833000000003"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[68]" " -type \"float2\" -0.17023045000000001 0.81217706000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[69]" " -type \"float2\" -0.17023045000000001 0.58667833000000003"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[70]" " -type \"float2\" -0.079014234000000003 0.81217706000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[71]" " -type \"float2\" -0.079014234000000003 0.58667833000000003"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[72]" " -type \"float2\" -0.044172718999999999 0.81217706000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[73]" " -type \"float2\" -0.044172718999999999 0.58667833000000003"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[74]" " -type \"float2\" -0.012741796999999999 0.81217706000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[75]" " -type \"float2\" -0.012741796999999999 0.58667833000000003"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[76]" " -type \"float2\" 0.012201905000000001 0.81217706000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[77]" " -type \"float2\" 0.012201905000000001 0.58667833000000003"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[78]" " -type \"float2\" -0.32771915000000001 0.81217706000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[79]" " -type \"float2\" -0.35915005 0.81217706000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[80]" " -type \"float2\" -0.35914993000000001 0.58667833000000003"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[81]" " -type \"float2\" -0.32771903000000002 0.58667833000000003"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[82]" " -type \"float2\" -0.39399159 0.81217706000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[83]" " -type \"float2\" -0.39399147000000001 0.58667833000000003"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[84]" " -type \"float2\" -0.30277532000000001 0.81217706000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[85]" " -type \"float2\" -0.30277532000000001 0.58667833000000003"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[86]" " -type \"float2\" -0.42883306999999998 0.81217693999999996"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[87]" " -type \"float2\" -0.42883294999999999 0.58667826999999995"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[88]" " -type \"float2\" -0.46026402999999999 0.81217693999999996"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[89]" " -type \"float2\" -0.46026391 0.58667820999999998"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[90]" " -type \"float2\" -0.48520785999999999 0.81217693999999996"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[91]" " -type \"float2\" -0.48520774 0.58667826999999995"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[92]" " -type \"float2\" 0.27317160000000001 0.1032498"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[93]" " -type \"float2\" 0.30011242999999999 0.1032498"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[94]" " -type \"float2\" 0.30011242999999999 0.31284448999999998"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[95]" " -type \"float2\" 0.27317153999999999 0.31284448999999998"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[96]" " -type \"float2\" 0.32149278999999997 0.1032498"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[97]" " -type \"float2\" 0.32149291000000002 0.31284448999999998"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[98]" " -type \"float2\" 0.24330748999999999 0.1032498"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[99]" " -type \"float2\" 0.24330748999999999 0.31284448999999998"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[100]" " -type \"float2\" 0.21344334000000001 0.1032498"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[101]" " -type \"float2\" 0.21344321999999999 0.31284448999999998"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[102]" " -type \"float2\" 0.18650264 0.1032498"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[103]" " -type \"float2\" 0.18650246000000001 0.31284448999999998"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[104]" " -type \"float2\" 0.16512210999999999 0.1032498"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[105]" " -type \"float2\" 0.16512223000000001 0.31284448999999998"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[106]" " -type \"float2\" -0.083477832000000002 0.1032498"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[107]" " -type \"float2\" -0.056536950000000002 0.1032498"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[108]" " -type \"float2\" -0.056537189000000002 0.31284448999999998"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[109]" " -type \"float2\" -0.083478011000000005 0.31284448999999998"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[110]" " -type \"float2\" -0.026672885 0.1032498"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[111]" " -type \"float2\" -0.026672885 0.31284448999999998"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[112]" " -type \"float2\" -0.10485815 0.1032498"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[113]" " -type \"float2\" -0.10485815 0.31284448999999998"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[114]" " -type \"float2\" 0.0031912401000000002 0.10324986"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[115]" " -type \"float2\" 0.0031912997000000001 0.31284454"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[116]" " -type \"float2\" 0.030131996000000001 0.10324986"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[117]" " -type \"float2\" 0.030132174000000001 0.31284454"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[118]" " -type \"float2\" 0.051512301000000003 0.10324986"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[119]" " -type \"float2\" 0.051512301000000003 0.31284454"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[120]" " -type \"float2\" -0.32646554999999999 -0.039461069000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[121]" " -type \"float2\" -0.31692708000000003 -0.039461069000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[122]" " -type \"float2\" -0.31692708000000003 -0.019014343999999999"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[123]" " -type \"float2\" -0.32646554999999999 -0.019028529999999998"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[124]" " -type \"float2\" -0.31692708000000003 -0.0016987892000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[125]" " -type \"float2\" -0.32646554999999999 -0.0016999217000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[126]" " -type \"float2\" -0.33604038000000003 -0.039461069000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[127]" " -type \"float2\" -0.33604038000000003 -0.019028529999999998"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[128]" " -type \"float2\" -0.31692708000000003 0.012903675"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[129]" " -type \"float2\" -0.32646554999999999 0.012905402999999999"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[130]" " -type \"float2\" -0.33604038000000003 -0.0016999217000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[131]" " -type \"float2\" -0.34572393000000001 -0.039461069000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[132]" " -type \"float2\" -0.34572393000000001 -0.019028529999999998"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[133]" " -type \"float2\" -0.31692708000000003 0.029349846999999998"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[134]" " -type \"float2\" -0.32646554999999999 0.029405756000000002"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[135]" " -type \"float2\" -0.33604038000000003 0.012905402999999999"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[136]" " -type \"float2\" -0.34572393000000001 -0.0016999217000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[137]" " -type \"float2\" -0.35544388999999998 -0.019014343999999999"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[138]" " -type \"float2\" -0.35544388999999998 -0.039461069000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[139]" " -type \"float2\" -0.31692708000000003 0.048819080000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[140]" " -type \"float2\" -0.32646554999999999 0.049113639000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[141]" " -type \"float2\" -0.33604038000000003 0.029405756000000002"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[142]" " -type \"float2\" -0.34572393000000001 0.012905402999999999"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[143]" " -type \"float2\" -0.35544388999999998 -0.0016987892000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[144]" " -type \"float2\" -0.31692708000000003 0.066335112000000002"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[145]" " -type \"float2\" -0.32646554999999999 0.066601842999999994"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[146]" " -type \"float2\" -0.33604038000000003 0.049113639000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[147]" " -type \"float2\" -0.34572393000000001 0.029405756000000002"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[148]" " -type \"float2\" -0.35544388999999998 0.012903675"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[149]" " -type \"float2\" -0.33604038000000003 0.066601842999999994"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[150]" " -type \"float2\" -0.34572393000000001 0.049113639000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[151]" " -type \"float2\" -0.35544388999999998 0.029349846999999998"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[152]" " -type \"float2\" -0.34572393000000001 0.066601842999999994"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[153]" " -type \"float2\" -0.35544388999999998 0.048819080000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[154]" " -type \"float2\" -0.35544388999999998 0.066335112000000002"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[155]" " -type \"float2\" -0.34599977999999998 -0.017264292000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[156]" " -type \"float2\" -0.33650750000000001 -0.017050967"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[157]" " -type \"float2\" -0.33650750000000001 0.012425139"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[158]" " -type \"float2\" -0.34599977999999998 0.012400522000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[159]" " -type \"float2\" -0.33650750000000001 -0.042070090999999997"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[160]" " -type \"float2\" -0.34599977999999998 -0.042369008"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[161]" " -type \"float2\" -0.33650750000000001 0.039239295"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[162]" " -type \"float2\" -0.34599977999999998 0.039250559999999997"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[163]" " -type \"float2\" -0.35552830000000002 -0.017264292000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[164]" " -type \"float2\" -0.35552830000000002 0.012400522000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[165]" " -type \"float2\" -0.35552830000000002 -0.042369008"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[166]" " -type \"float2\" -0.33650750000000001 -0.058521204"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[167]" " -type \"float2\" -0.34599977999999998 -0.058742217999999999"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[168]" " -type \"float2\" -0.33650750000000001 0.056659050000000002"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[169]" " -type \"float2\" -0.34599977999999998 0.056659050000000002"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[170]" " -type \"float2\" -0.35552830000000002 0.039250559999999997"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[171]" " -type \"float2\" -0.365165 -0.017264411"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[172]" " -type \"float2\" -0.365165 0.012400522000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[173]" " -type \"float2\" -0.365165 -0.042369008"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[174]" " -type \"float2\" -0.35552830000000002 0.056659050000000002"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[175]" " -type \"float2\" -0.365165 0.039250559999999997"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[176]" " -type \"float2\" -0.37483792999999999 0.012425139"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[177]" " -type \"float2\" -0.37483792999999999 -0.017050967"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[178]" " -type \"float2\" -0.37483792999999999 -0.042070090999999997"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[179]" " -type \"float2\" -0.365165 0.056659050000000002"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[180]" " -type \"float2\" -0.37483792999999999 0.039239295"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[181]" " -type \"float2\" -0.37483792999999999 -0.058521204"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[182]" " -type \"float2\" -0.365165 -0.058742217999999999"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[183]" " -type \"float2\" -0.37483792999999999 0.056659050000000002"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[184]" " -type \"float2\" -0.24161421 0.063372238999999997"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[185]" " -type \"float2\" -0.24161421 0.044753834999999999"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[186]" " -type \"float2\" -0.23206455000000001 0.044753834999999999"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[187]" " -type \"float2\" -0.23206455000000001 0.063372238999999997"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[188]" " -type \"float2\" -0.25120014000000002 0.063372238999999997"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[189]" " -type \"float2\" -0.25120014000000002 0.044753834999999999"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[190]" " -type \"float2\" -0.24161421 0.030892177"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[191]" " -type \"float2\" -0.23206455000000001 0.030892177"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[192]" " -type \"float2\" -0.26089488999999999 0.063372238999999997"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[193]" " -type \"float2\" -0.26089488999999999 0.044753834999999999"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[194]" " -type \"float2\" -0.25120014000000002 0.030892177"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[195]" " -type \"float2\" -0.24161421 0.018791003000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[196]" " -type \"float2\" -0.23206455000000001 0.018791003000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[197]" " -type \"float2\" -0.27062618999999999 0.044753834999999999"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[198]" " -type \"float2\" -0.27062618999999999 0.063372238999999997"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[199]" " -type \"float2\" -0.26089488999999999 0.030892177"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[200]" " -type \"float2\" -0.25120014000000002 0.018791003000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[201]" " -type \"float2\" -0.24161421 0.0061418143999999999"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[202]" " -type \"float2\" -0.23206455000000001 0.0061418143999999999"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[203]" " -type \"float2\" -0.27062618999999999 0.030892177"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[204]" " -type \"float2\" -0.26089488999999999 0.018791003000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[205]" " -type \"float2\" -0.25120014000000002 0.0061418143999999999"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[206]" " -type \"float2\" -0.24161421 -0.0066109877000000003"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[207]" " -type \"float2\" -0.23206455000000001 -0.0066109877000000003"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[208]" " -type \"float2\" -0.27062618999999999 0.018791003000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[209]" " -type \"float2\" -0.26089488999999999 0.0061418143999999999"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[210]" " -type \"float2\" -0.25120014000000002 -0.0066109877000000003"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[211]" " -type \"float2\" -0.24161421 -0.018335148999999999"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[212]" " -type \"float2\" -0.23206455000000001 -0.018335148999999999"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[213]" " -type \"float2\" -0.27062618999999999 0.0061418143999999999"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[214]" " -type \"float2\" -0.26089488999999999 -0.0066109877000000003"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[215]" " -type \"float2\" -0.25120014000000002 -0.018335148999999999"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[216]" " -type \"float2\" -0.27062618999999999 -0.0066109877000000003"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[217]" " -type \"float2\" -0.26089488999999999 -0.018335148999999999"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[218]" " -type \"float2\" -0.27062618999999999 -0.018335148999999999"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[219]" " -type \"float2\" -0.19756824000000001 0.046840712"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[220]" " -type \"float2\" -0.19756824000000001 0.024225993000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[221]" " -type \"float2\" -0.18800341000000001 0.024225993000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[222]" " -type \"float2\" -0.18800341000000001 0.046840712"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[223]" " -type \"float2\" -0.2071694 0.046840712"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[224]" " -type \"float2\" -0.2071694 0.024225993000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[225]" " -type \"float2\" -0.19756824000000001 0.0023160451000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[226]" " -type \"float2\" -0.18800341000000001 0.0023160451000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[227]" " -type \"float2\" -0.18800341000000001 0.065243110000000007"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[228]" " -type \"float2\" -0.19756824000000001 0.065243110000000007"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[229]" " -type \"float2\" -0.21687977 0.046840712"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[230]" " -type \"float2\" -0.21687977 0.024225993000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[231]" " -type \"float2\" -0.2071694 0.0023160451000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[232]" " -type \"float2\" -0.2071694 0.065243110000000007"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[233]" " -type \"float2\" -0.19756824000000001 -0.013118729000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[234]" " -type \"float2\" -0.18800341000000001 -0.013118729000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[235]" " -type \"float2\" -0.22662644000000001 0.024225993000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[236]" " -type \"float2\" -0.22662644000000001 0.046840712"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[237]" " -type \"float2\" -0.21687977 0.0023160451000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[238]" " -type \"float2\" -0.21687977 0.065243110000000007"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[239]" " -type \"float2\" -0.2071694 -0.013118729000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[240]" " -type \"float2\" -0.22662644000000001 0.0023160451000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[241]" " -type \"float2\" -0.22662644000000001 0.065243110000000007"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[242]" " -type \"float2\" -0.21687977 -0.013118729000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[243]" " -type \"float2\" -0.22662644000000001 -0.013118729000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[244]" " -type \"float2\" 0.16599621000000001 0.80196016999999997"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[245]" " -type \"float2\" 0.16831273999999999 0.80650644999999999"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[246]" " -type \"float2\" 0.15511875 0.81609231000000004"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[247]" " -type \"float2\" 0.1504858 0.80699968"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[248]" " -type \"float2\" 0.18150670999999999 0.79692041999999996"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[249]" " -type \"float2\" 0.17192076000000001 0.81011438000000002"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[250]" " -type \"float2\" 0.1623347 0.82330840999999999"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[251]" " -type \"float2\" 0.14192474999999999 0.82567840999999997"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[252]" " -type \"float2\" 0.13497522000000001 0.81203932000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[253]" " -type \"float2\" 0.16519809999999999 0.79692041999999996"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[254]" " -type \"float2\" 0.14888944000000001 0.79692041999999996"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[255]" " -type \"float2\" 0.17646711000000001 0.81243085999999998"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[256]" " -type \"float2\" 0.17142737999999999 0.82794135999999996"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[257]" " -type \"float2\" 0.15274874999999999 0.83650237000000005"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[258]" " -type \"float2\" 0.12873071 0.83526438000000003"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[259]" " -type \"float2\" 0.11946476 0.81707907000000002"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[260]" " -type \"float2\" 0.13258067000000001 0.79692041999999996"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[261]" " -type \"float2\" 0.16599621000000001 0.79188073000000003"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[262]" " -type \"float2\" 0.15048582999999999 0.78684114999999999"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[263]" " -type \"float2\" 0.18150670999999999 0.81322908000000005"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[264]" " -type \"float2\" 0.18150670999999999 0.82953774999999996"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[265]" " -type \"float2\" 0.16638771999999999 0.84345186000000005"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[266]" " -type \"float2\" 0.14316274000000001 0.84969640000000002"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[267]" " -type \"float2\" 0.11553672 0.84485041999999999"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[268]" " -type \"float2\" 0.10395434000000001 0.82211875999999995"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[269]" " -type \"float2\" 0.116272 0.79692041999999996"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[270]" " -type \"float2\" 0.13497537000000001 0.78180145999999995"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[271]" " -type \"float2\" 0.16831273999999999 0.78733443999999997"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[272]" " -type \"float2\" 0.15511875 0.77774834999999998"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[273]" " -type \"float2\" 0.18654633000000001 0.81243085999999998"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[274]" " -type \"float2\" 0.19158605000000001 0.82794135999999996"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[275]" " -type \"float2\" 0.18150670999999999 0.84584641000000005"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[276]" " -type \"float2\" 0.161348 0.85896229999999996"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[277]" " -type \"float2\" 0.13357672000000001 0.86289042000000005"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[278]" " -type \"float2\" 0.10234272 0.85443639999999998"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[279]" " -type \"float2\" 0.088443815999999995 0.82715833000000005"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[280]" " -type \"float2\" 0.099963336999999999 0.79692041999999996"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[281]" " -type \"float2\" 0.11946487 0.77676177000000002"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[282]" " -type \"float2\" 0.14192468999999999 0.76816231000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[283]" " -type \"float2\" 0.17192076000000001 0.78372633000000003"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[284]" " -type \"float2\" 0.1623347 0.77053236999999997"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[285]" " -type \"float2\" 0.19109272999999999 0.81011438000000002"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[286]" " -type \"float2\" 0.20067872 0.82330840999999999"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[287]" " -type \"float2\" 0.19662566000000001 0.84345186000000005"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[288]" " -type \"float2\" 0.18150670999999999 0.86215514000000004"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[289]" " -type \"float2\" 0.15630846000000001 0.87447280000000005"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[290]" " -type \"float2\" 0.12399068000000001 0.87608439000000005"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[291]" " -type \"float2\" 0.089148729999999995 0.86402243000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[292]" " -type \"float2\" 0.072933435000000005 0.83219801999999998"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[293]" " -type \"float2\" 0.083654701999999997 0.79692041999999996"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[294]" " -type \"float2\" 0.10395443 0.77172207999999998"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[295]" " -type \"float2\" 0.12873076999999999 0.75857638999999999"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[296]" " -type \"float2\" 0.15274866000000001 0.75733846000000005"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[297]" " -type \"float2\" 0.17646711000000001 0.78140991999999998"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[298]" " -type \"float2\" 0.17142747 0.76589936000000003"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[299]" " -type \"float2\" 0.19470072999999999 0.80650644999999999"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[300]" " -type \"float2\" 0.20789471000000001 0.81609237000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[301]" " -type \"float2\" 0.21026468000000001 0.83650237000000005"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[302]" " -type \"float2\" 0.20166539999999999 0.85896229999999996"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[303]" " -type \"float2\" 0.18150670999999999 0.87846374999999999"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[304]" " -type \"float2\" 0.15126874000000001 0.88998330000000003"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[305]" " -type \"float2\" 0.11440467999999999 0.88927840999999996"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[306]" " -type \"float2\" 0.067346065999999996 0.79692041999999996"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[307]" " -type \"float2\" 0.088443905000000003 0.76668250999999998"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[308]" " -type \"float2\" 0.11553681 0.74899042000000005"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[309]" " -type \"float2\" 0.14316276999999999 0.74414444000000002"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[310]" " -type \"float2\" 0.16638775 0.75038897999999998"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[311]" " -type \"float2\" 0.18150670999999999 0.78061175000000005"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[312]" " -type \"float2\" 0.18150670999999999 0.76430297000000003"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[313]" " -type \"float2\" 0.19701717999999999 0.80196016999999997"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[314]" " -type \"float2\" 0.21252768999999999 0.80699968"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[315]" " -type \"float2\" 0.22108875 0.82567835000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[316]" " -type \"float2\" 0.21985076000000001 0.84969640000000002"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[317]" " -type \"float2\" 0.206705 0.87447280000000005"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[318]" " -type \"float2\" 0.18150670999999999 0.89477247000000004"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[319]" " -type \"float2\" 0.14622913000000001 0.90549374000000005"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[320]" " -type \"float2\" 0.072933375999999994 0.76164281"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[321]" " -type \"float2\" 0.10234277999999999 0.73940437999999997"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[322]" " -type \"float2\" 0.13357674999999999 0.73095041999999999"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[323]" " -type \"float2\" 0.16134809 0.73487853999999997"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[324]" " -type \"float2\" 0.18150670999999999 0.74799435999999997"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[325]" " -type \"float2\" 0.18654633000000001 0.78140991999999998"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[326]" " -type \"float2\" 0.19158605000000001 0.76589936000000003"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[327]" " -type \"float2\" 0.19781536999999999 0.79692041999999996"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[328]" " -type \"float2\" 0.21412402 0.79692041999999996"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[329]" " -type \"float2\" 0.22803809999999999 0.81203937999999998"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[330]" " -type \"float2\" 0.23428262999999999 0.83526444"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[331]" " -type \"float2\" 0.22943673000000001 0.86289035999999997"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[332]" " -type \"float2\" 0.21174472999999999 0.88998330000000003"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[333]" " -type \"float2\" 0.18150670999999999 0.91108113999999996"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[334]" " -type \"float2\" 0.089148699999999997 0.72981845999999995"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[335]" " -type \"float2\" 0.12399071 0.71775639000000002"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[336]" " -type \"float2\" 0.15630848999999999 0.71936798000000002"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[337]" " -type \"float2\" 0.18150670999999999 0.73168564000000003"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[338]" " -type \"float2\" 0.19662566000000001 0.75038897999999998"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[339]" " -type \"float2\" 0.19109272999999999 0.78372633000000003"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[340]" " -type \"float2\" 0.20067872 0.77053236999999997"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[341]" " -type \"float2\" 0.19701717999999999 0.79188073000000003"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[342]" " -type \"float2\" 0.21252768999999999 0.78684114999999999"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[343]" " -type \"float2\" 0.23043274999999999 0.79692041999999996"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[344]" " -type \"float2\" 0.24354853000000001 0.81707907000000002"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[345]" " -type \"float2\" 0.24747675999999999 0.84485041999999999"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[346]" " -type \"float2\" 0.23902272999999999 0.87608445000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[347]" " -type \"float2\" 0.21678433 0.90549374000000005"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[348]" " -type \"float2\" 0.11440471000000001 0.70456242999999996"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[349]" " -type \"float2\" 0.15126877 0.70385759999999997"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[350]" " -type \"float2\" 0.18150670999999999 0.71537702999999997"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[351]" " -type \"float2\" 0.20166539999999999 0.73487853999999997"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[352]" " -type \"float2\" 0.21026465 0.75733846000000005"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[353]" " -type \"float2\" 0.19470072999999999 0.78733443999999997"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[354]" " -type \"float2\" 0.20789471000000001 0.77774834999999998"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[355]" " -type \"float2\" 0.22803809999999999 0.78180145999999995"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[356]" " -type \"float2\" 0.24674146999999999 0.79692041999999996"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[357]" " -type \"float2\" 0.25905907 0.82211864000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[358]" " -type \"float2\" 0.26067066 0.85443639999999998"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[359]" " -type \"float2\" 0.24860878 0.88927840999999996"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[360]" " -type \"float2\" 0.14622916 0.68834709999999999"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[361]" " -type \"float2\" 0.18150670999999999 0.69906836999999999"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[362]" " -type \"float2\" 0.206705 0.71936798000000002"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[363]" " -type \"float2\" 0.21985070000000001 0.74414444000000002"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[364]" " -type \"float2\" 0.22108875 0.76816231000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[365]" " -type \"float2\" 0.24354853000000001 0.77676177000000002"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[366]" " -type \"float2\" 0.26305008000000002 0.79692041999999996"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[367]" " -type \"float2\" 0.27456951000000002 0.82715833000000005"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[368]" " -type \"float2\" 0.27386474999999999 0.86402237000000004"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[369]" " -type \"float2\" 0.18150670999999999 0.68275969999999997"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[370]" " -type \"float2\" 0.21174472999999999 0.70385759999999997"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[371]" " -type \"float2\" 0.22943667000000001 0.73095041999999999"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[372]" " -type \"float2\" 0.23428262999999999 0.75857638999999999"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[373]" " -type \"float2\" 0.25905907 0.77172207999999998"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[374]" " -type \"float2\" 0.27935873999999999 0.79692041999999996"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[375]" " -type \"float2\" 0.29008001 0.83219796000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[376]" " -type \"float2\" 0.21678433 0.68834709999999999"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[377]" " -type \"float2\" 0.23902272999999999 0.71775639000000002"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[378]" " -type \"float2\" 0.24747667000000001 0.74899042000000005"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[379]" " -type \"float2\" 0.27456951000000002 0.76668250999999998"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[380]" " -type \"float2\" 0.29566746999999999 0.79692041999999996"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[381]" " -type \"float2\" 0.24860874999999999 0.70456242999999996"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[382]" " -type \"float2\" 0.26067066 0.73940437999999997"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[383]" " -type \"float2\" 0.29008001 0.76164281"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[384]" " -type \"float2\" 0.27386469000000002 0.72981834000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[385]" " -type \"float2\" -0.37008302999999998 0.48109245"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[386]" " -type \"float2\" -0.35386759000000001 0.44926812999999999"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[387]" " -type \"float2\" -0.34067363000000001 0.45885405000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[388]" " -type \"float2\" -0.35457246999999997 0.48613213999999999"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[389]" " -type \"float2\" -0.32861167000000002 0.42401209000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[390]" " -type \"float2\" -0.31902564 0.43720611999999998"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[391]" " -type \"float2\" -0.37567031000000001 0.51637005999999996"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[392]" " -type \"float2\" -0.35936164999999998 0.51637005999999996"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[393]" " -type \"float2\" -0.29678719999999997 0.40779683"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[394]" " -type \"float2\" -0.29174762999999998 0.42330727000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[395]" " -type \"float2\" -0.37008290999999999 0.55164771999999995"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[396]" " -type \"float2\" -0.35457242 0.54660803000000002"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[397]" " -type \"float2\" -0.26150960000000001 0.40220930999999999"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[398]" " -type \"float2\" -0.26150960000000001 0.41851798000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[399]" " -type \"float2\" -0.35386752999999999 0.58347212999999998"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[400]" " -type \"float2\" -0.34067356999999998 0.57388603999999999"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[401]" " -type \"float2\" -0.22623198 0.40779683"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[402]" " -type \"float2\" -0.23127160999999999 0.42330727000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[403]" " -type \"float2\" -0.32861167000000002 0.60872804999999997"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[404]" " -type \"float2\" -0.31902557999999998 0.59553409000000002"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[405]" " -type \"float2\" -0.19440757 0.42401214999999998"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[406]" " -type \"float2\" -0.20399354 0.43720611999999998"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[407]" " -type \"float2\" -0.29678714 0.62494338000000005"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[408]" " -type \"float2\" -0.29174757000000001 0.609433"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[409]" " -type \"float2\" -0.16915166000000001 0.44926807000000002"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[410]" " -type \"float2\" -0.18234566999999999 0.45885405000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[411]" " -type \"float2\" -0.26150960000000001 0.63053077000000002"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[412]" " -type \"float2\" -0.26150960000000001 0.61422217000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[413]" " -type \"float2\" -0.15293634 0.48109245"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[414]" " -type \"float2\" -0.16844677999999999 0.48613213999999999"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[415]" " -type \"float2\" -0.22623198 0.62494338000000005"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[416]" " -type \"float2\" -0.23127160999999999 0.609433"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[417]" " -type \"float2\" -0.14734881 0.51637005999999996"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[418]" " -type \"float2\" -0.16365755000000001 0.51637005999999996"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[419]" " -type \"float2\" -0.19440757 0.60872804999999997"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[420]" " -type \"float2\" -0.20399354 0.59553409000000002"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[421]" " -type \"float2\" -0.15293634 0.55164771999999995"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[422]" " -type \"float2\" -0.16844677999999999 0.54660803000000002"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[423]" " -type \"float2\" -0.16915172000000001 0.58347212999999998"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[424]" " -type \"float2\" -0.18234566999999999 0.57388603999999999"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[425]" " -type \"float2\" -0.47729355000000001 0.22118855000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[426]" " -type \"float2\" -0.46339469999999999 0.19391032999999999"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[427]" " -type \"float2\" -0.45020068000000002 0.20349639999999999"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[428]" " -type \"float2\" -0.46178311 0.22622818"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[429]" " -type \"float2\" -0.44174670999999999 0.17226227999999999"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[430]" " -type \"float2\" -0.43216068000000002 0.18545631000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[431]" " -type \"float2\" -0.43700671000000002 0.21308242999999999"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[432]" " -type \"float2\" -0.44627266999999998 0.23126786999999999"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[433]" " -type \"float2\" -0.48208272000000002 0.25142639999999999"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[434]" " -type \"float2\" -0.46577405999999999 0.25142639999999999"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[435]" " -type \"float2\" -0.41446871000000002 0.15836349"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[436]" " -type \"float2\" -0.40942900999999998 0.17387411"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[437]" " -type \"float2\" -0.42257464 0.19865033000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[438]" " -type \"float2\" -0.42381268999999999 0.22266834999999999"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[439]" " -type \"float2\" -0.43076223000000002 0.2363075"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[440]" " -type \"float2\" -0.44946539000000002 0.25142639999999999"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[441]" " -type \"float2\" -0.47729343000000002 0.28166451999999997"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[442]" " -type \"float2\" -0.46178311 0.27662477000000002"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[443]" " -type \"float2\" -0.38423060999999997 0.15357438000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[444]" " -type \"float2\" -0.38423060999999997 0.16988304000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[445]" " -type \"float2\" -0.40438932 0.18938455000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[446]" " -type \"float2\" -0.41298878 0.21184421000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[447]" " -type \"float2\" -0.41061871999999999 0.23225439000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[448]" " -type \"float2\" -0.41525167000000002 0.24134722"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[449]" " -type \"float2\" -0.43315672999999999 0.25142628"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[450]" " -type \"float2\" -0.44627261000000001 0.27158507999999998"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[451]" " -type \"float2\" -0.46339469999999999 0.30894259000000002"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[452]" " -type \"float2\" -0.45020062 0.29935643000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[453]" " -type \"float2\" -0.35399276000000002 0.15836367000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[454]" " -type \"float2\" -0.35903233000000001 0.17387411"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[455]" " -type \"float2\" -0.38423060999999997 0.18619164999999999"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[456]" " -type \"float2\" -0.39934968999999998 0.20489495999999999"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[457]" " -type \"float2\" -0.40340262999999998 0.22503835"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[458]" " -type \"float2\" -0.39742464 0.24183992000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[459]" " -type \"float2\" -0.39974116999999998 0.24638732999999999"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[460]" " -type \"float2\" -0.41684806000000002 0.25142628"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[461]" " -type \"float2\" -0.43076210999999998 0.26654520999999998"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[462]" " -type \"float2\" -0.43700665 0.28977033000000002"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[463]" " -type \"float2\" -0.44174665000000002 0.33059028000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[464]" " -type \"float2\" -0.43216068000000002 0.31739631000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[465]" " -type \"float2\" -0.32671463000000001 0.17226252"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[466]" " -type \"float2\" -0.33630061 0.18545642000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[467]" " -type \"float2\" -0.36407208000000002 0.18938448999999999"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[468]" " -type \"float2\" -0.38423060999999997 0.2025004"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[469]" " -type \"float2\" -0.39431 0.22040546"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[470]" " -type \"float2\" -0.39381664999999999 0.23823193000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[471]" " -type \"float2\" -0.38423060999999997 0.25142646000000002"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[472]" " -type \"float2\" -0.40053928 0.25142688000000002"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[473]" " -type \"float2\" -0.41525167000000002 0.26150548000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[474]" " -type \"float2\" -0.42381268999999999 0.28018441999999999"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[475]" " -type \"float2\" -0.42257464 0.30420235000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[476]" " -type \"float2\" -0.41446859000000003 0.34448925000000002"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[477]" " -type \"float2\" -0.40942900999999998 0.32897874999999999"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[478]" " -type \"float2\" -0.30506670000000002 0.19391027"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[479]" " -type \"float2\" -0.31826067000000002 0.20349639999999999"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[480]" " -type \"float2\" -0.34588665000000002 0.19865045000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[481]" " -type \"float2\" -0.36911171999999998 0.20489502000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[482]" " -type \"float2\" -0.38423060999999997 0.21880912999999999"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[483]" " -type \"float2\" -0.38927036999999998 0.23591596000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[484]" " -type \"float2\" -0.39974116999999998 0.25646585"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[485]" " -type \"float2\" -0.4106186 0.27059844"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[486]" " -type \"float2\" -0.41298878 0.29100838000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[487]" " -type \"float2\" -0.40438932 0.31346843000000002"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[488]" " -type \"float2\" -0.38423060999999997 0.34927859999999999"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[489]" " -type \"float2\" -0.38423060999999997 0.33296980999999998"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[490]" " -type \"float2\" -0.29116779999999998 0.22118837"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[491]" " -type \"float2\" -0.30667830000000001 0.22622812"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[492]" " -type \"float2\" -0.33145462999999997 0.21308249000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[493]" " -type \"float2\" -0.35547267999999999 0.21184443999999999"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[494]" " -type \"float2\" -0.37415134999999999 0.2204054"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[495]" " -type \"float2\" -0.38423060999999997 0.23511773"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[496]" " -type \"float2\" -0.39742464 0.26101260999999998"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[497]" " -type \"float2\" -0.40340262999999998 0.27781442000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[498]" " -type \"float2\" -0.39934963000000001 0.29795780999999999"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[499]" " -type \"float2\" -0.38423060999999997 0.31666115"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[500]" " -type \"float2\" -0.35399276000000002 0.34448907000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[501]" " -type \"float2\" -0.35903233000000001 0.32897862999999999"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[502]" " -type \"float2\" -0.28637856 0.25142639999999999"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[503]" " -type \"float2\" -0.30268722999999997 0.25142639999999999"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[504]" " -type \"float2\" -0.32218879 0.23126780999999999"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[505]" " -type \"float2\" -0.34464866 0.22266841000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[506]" " -type \"float2\" -0.36505865999999998 0.22503846999999999"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[507]" " -type \"float2\" -0.37919103999999998 0.23591596000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[508]" " -type \"float2\" -0.39381664999999999 0.26462068999999999"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[509]" " -type \"float2\" -0.39430994000000003 0.28244731000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[510]" " -type \"float2\" -0.38423060999999997 0.30035242000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[511]" " -type \"float2\" -0.36407208000000002 0.31346843000000002"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[512]" " -type \"float2\" -0.32671463000000001 0.33059033999999998"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[513]" " -type \"float2\" -0.33630061 0.31739636999999998"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[514]" " -type \"float2\" -0.29116779999999998 0.28166451999999997"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[515]" " -type \"float2\" -0.30667830000000001 0.27662471"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[516]" " -type \"float2\" -0.31899601 0.25142639999999999"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[517]" " -type \"float2\" -0.33769923000000002 0.23630738000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[518]" " -type \"float2\" -0.35784268000000002 0.23225445"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[519]" " -type \"float2\" -0.3746447 0.23823288000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[520]" " -type \"float2\" -0.38927036999999998 0.26693675"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[521]" " -type \"float2\" -0.38423060999999997 0.28404370000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[522]" " -type \"float2\" -0.36911171999999998 0.29795780999999999"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[523]" " -type \"float2\" -0.34588665000000002 0.30420240999999998"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[524]" " -type \"float2\" -0.30506670000000002 0.30894264999999999"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[525]" " -type \"float2\" -0.31826067000000002 0.29935643000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[526]" " -type \"float2\" -0.32218879 0.27158490000000002"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[527]" " -type \"float2\" -0.33530462 0.25142628"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[528]" " -type \"float2\" -0.35320973 0.24134692999999999"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[529]" " -type \"float2\" -0.37103665000000002 0.24184093000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[530]" " -type \"float2\" -0.38423060999999997 0.26773518000000002"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[531]" " -type \"float2\" -0.37415141000000002 0.28244719000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[532]" " -type \"float2\" -0.35547267999999999 0.29100819999999999"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[533]" " -type \"float2\" -0.33145462999999997 0.28977027999999999"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[534]" " -type \"float2\" -0.33769923000000002 0.26654527"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[535]" " -type \"float2\" -0.35161322 0.25142628"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[536]" " -type \"float2\" -0.36872022999999998 0.24638673999999999"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[537]" " -type \"float2\" -0.37919103999999998 0.26693693000000002"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[538]" " -type \"float2\" -0.36505865999999998 0.27781412"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[539]" " -type \"float2\" -0.34464866 0.28018418"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[540]" " -type \"float2\" -0.35320973 0.26150572"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[541]" " -type \"float2\" -0.36792195 0.25142639999999999"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[542]" " -type \"float2\" -0.3746447 0.26461985999999998"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[543]" " -type \"float2\" -0.35784268000000002 0.27059832"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[544]" " -type \"float2\" -0.36872022999999998 0.25646608999999998"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[545]" " -type \"float2\" -0.37103665000000002 0.26101190000000002"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[546]" " -type \"float2\" -0.45544796999999998 -0.082568631000000003"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[547]" " -type \"float2\" -0.44584656 -0.082559034000000003"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[548]" " -type \"float2\" -0.44584656 -0.047241747000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[549]" " -type \"float2\" -0.45544796999999998 -0.047225296"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[550]" " -type \"float2\" -0.44584656 -0.11592798999999999"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[551]" " -type \"float2\" -0.45544796999999998 -0.11596070999999999"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[552]" " -type \"float2\" -0.44584656 -0.013817474"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[553]" " -type \"float2\" -0.45544796999999998 -0.013730391999999999"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[554]" " -type \"float2\" -0.46508598000000001 -0.082568631000000003"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[555]" " -type \"float2\" -0.46508598000000001 -0.047225296"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[556]" " -type \"float2\" -0.46508598000000001 -0.11596070999999999"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[557]" " -type \"float2\" -0.44584656 -0.14408571000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[558]" " -type \"float2\" -0.45544796999999998 -0.14425569999999999"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[559]" " -type \"float2\" -0.46508598000000001 -0.013730391999999999"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[560]" " -type \"float2\" -0.47483349000000002 -0.082568631000000003"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[561]" " -type \"float2\" -0.47483349000000002 -0.047225296"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[562]" " -type \"float2\" -0.47483349000000002 -0.11596070999999999"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[563]" " -type \"float2\" -0.46508598000000001 -0.14425569999999999"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[564]" " -type \"float2\" -0.46508598000000001 0.014988405999999999"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[565]" " -type \"float2\" -0.45544796999999998 0.014988405999999999"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[566]" " -type \"float2\" -0.47483349000000002 -0.013730391999999999"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[567]" " -type \"float2\" -0.48461753000000002 -0.047241747000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[568]" " -type \"float2\" -0.48461753000000002 -0.082559034000000003"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[569]" " -type \"float2\" -0.48461753000000002 -0.11592798999999999"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[570]" " -type \"float2\" -0.47483349000000002 -0.14425569999999999"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[571]" " -type \"float2\" -0.47483349000000002 0.014988405999999999"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[572]" " -type \"float2\" -0.48461753000000002 -0.013817474"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[573]" " -type \"float2\" -0.48461753000000002 -0.14408571000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[574]" " -type \"float2\" -0.40974832 0.0042334972000000002"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[575]" " -type \"float2\" -0.40974832 -0.026442274000000002"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[576]" " -type \"float2\" -0.40015334000000002 -0.026442274000000002"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[577]" " -type \"float2\" -0.40015334000000002 0.0042334972000000002"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[578]" " -type \"float2\" -0.41937988999999998 0.0042334972000000002"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[579]" " -type \"float2\" -0.41937988999999998 -0.026442274000000002"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[580]" " -type \"float2\" -0.40974832 -0.054220729000000002"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[581]" " -type \"float2\" -0.40015334000000002 -0.054220729000000002"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[582]" " -type \"float2\" -0.40015334000000002 0.033414795999999997"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[583]" " -type \"float2\" -0.40974832 0.033414795999999997"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[584]" " -type \"float2\" -0.42912096 0.0042334972000000002"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[585]" " -type \"float2\" -0.42912096 -0.026442274000000002"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[586]" " -type \"float2\" -0.41937988999999998 -0.054220729000000002"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[587]" " -type \"float2\" -0.41937988999999998 0.033414795999999997"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[588]" " -type \"float2\" -0.40974832 -0.076534434999999998"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[589]" " -type \"float2\" -0.40015334000000002 -0.076534434999999998"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[590]" " -type \"float2\" -0.40015334000000002 0.056253202000000002"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[591]" " -type \"float2\" -0.40974832 0.056253202000000002"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[592]" " -type \"float2\" -0.43889844 -0.026442274000000002"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[593]" " -type \"float2\" -0.43889844 0.0042334972000000002"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[594]" " -type \"float2\" -0.42912096 -0.054220729000000002"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[595]" " -type \"float2\" -0.42912096 0.033414795999999997"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[596]" " -type \"float2\" -0.41937988999999998 -0.076534434999999998"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[597]" " -type \"float2\" -0.41937988999999998 0.056253202000000002"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[598]" " -type \"float2\" -0.43889844 -0.054220729000000002"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[599]" " -type \"float2\" -0.43889844 0.033414795999999997"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[600]" " -type \"float2\" -0.42912096 -0.076534434999999998"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[601]" " -type \"float2\" -0.42912096 0.056253202000000002"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[602]" " -type \"float2\" -0.43889844 -0.076534434999999998"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[603]" " -type \"float2\" -0.43889844 0.056253202000000002"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[604]" " -type \"float2\" -0.17833196000000001 -0.022675379999999998"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[605]" " -type \"float2\" -0.17833196000000001 -0.032283828000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[606]" " -type \"float2\" -0.15683685 -0.032283828000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[607]" " -type \"float2\" -0.15683685 -0.022675379999999998"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[608]" " -type \"float2\" -0.17833196000000001 -0.013030335000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[609]" " -type \"float2\" -0.15683685 -0.013030335000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[610]" " -type \"float2\" -0.17833196000000001 -0.0032757502000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[611]" " -type \"float2\" -0.15683685 -0.0032757502000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[612]" " -type \"float2\" -0.17833196000000001 0.0065154460999999999"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[613]" " -type \"float2\" -0.15683685 0.0065154460999999999"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[614]" " -type \"float2\" -0.12123398000000001 -0.021411821000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[615]" " -type \"float2\" -0.12123398000000001 -0.011642931"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[616]" " -type \"float2\" -0.14305358000000001 -0.011642931"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[617]" " -type \"float2\" -0.14305358000000001 -0.021411821000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[618]" " -type \"float2\" -0.12123398000000001 -0.0018373700000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[619]" " -type \"float2\" -0.14305358000000001 -0.0018373700000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[620]" " -type \"float2\" -0.12123398000000001 -0.031070942000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[621]" " -type \"float2\" -0.14305358000000001 -0.031070942000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[622]" " -type \"float2\" -0.12123398000000001 -0.040693462"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[623]" " -type \"float2\" -0.14305358000000001 -0.040693462"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[624]" " -type \"float2\" -0.20166139 0.81217706000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[625]" " -type \"float2\" -0.20166139 0.58667833000000003"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[626]" " -type \"float2\" -0.23650283 0.81217706000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[627]" " -type \"float2\" -0.23650283 0.58667833000000003"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[628]" " -type \"float2\" -0.27134436000000001 0.81217706000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[629]" " -type \"float2\" -0.27134436000000001 0.58667833000000003"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[630]" " -type \"float2\" -0.51663882000000005 0.81217693999999996"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[631]" " -type \"float2\" -0.51663870000000001 0.58667820999999998"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[632]" " -type \"float2\" -0.55148023000000002 0.81217693999999996"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[633]" " -type \"float2\" -0.55148010999999997 0.58667820999999998"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[634]" " -type \"float2\" -0.58632158999999995 0.81217693999999996"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[635]" " -type \"float2\" -0.58632158999999995 0.58667826999999995"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[636]" " -type \"float2\" -0.61775267 0.81217687999999999"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[637]" " -type \"float2\" -0.61775267 0.58667826999999995"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[638]" " -type \"float2\" 0.34843349000000001 0.1032498"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[639]" " -type \"float2\" 0.34843373 0.31284448999999998"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[640]" " -type \"float2\" 0.37829769000000002 0.10324974000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[641]" " -type \"float2\" 0.37829792000000001 0.31284443000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[642]" " -type \"float2\" 0.40816187999999998 0.10324974000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[643]" " -type \"float2\" 0.408162 0.31284443000000001"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[644]" " -type \"float2\" 0.43510263999999998 0.10324968"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[645]" " -type \"float2\" 0.43510293999999999 0.31284424999999999"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[646]" " -type \"float2\" 0.078453182999999996 0.10324986"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[647]" " -type \"float2\" 0.078453332000000001 0.31284454"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[648]" " -type \"float2\" 0.10831726 0.1032498"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[649]" " -type \"float2\" 0.10831739999999999 0.31284448999999998"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[650]" " -type \"float2\" 0.13818136 0.10324986"
-		
-		2 "Mug13:polyTweakUV7" "uvTweak[651]" " -type \"float2\" 0.13818148 0.31284454"
-		
+		2 "Mug13:polyTweakUV7" "uvtk[0:249]" (" -type \"float2\" -0.023250178 0.50293273000000005 -0.0044459701000000001 0.50802009999999997 -0.0084129870000000002 0.52993535999999997 -0.029087677999999999 0.52450943000000005 0.0095539987 0.50933903000000003 0.0090959071999999995 0.53162651999999999 0.02177608 0.50869279999999995 0.023861349 0.53092921000000004 0.034551591 0.50696825999999995 0.040490924999999997 0.52829868000000002 0.047431885999999999 0.50138605000000003 0.060177415999999997 0.51912367000000004 0.059273034000000002 0.48825023000000001 0.077888905999999994 0.50003635999999996 0.068850367999999995 0.46529304999999999 0.090131490999999994 0.47175103000000002 0.074614435000000007 0.43595984999999998 0.096756547999999998 0.43823084000000001 0.074934423 0.40512451999999999 0.097006052999999995 0.40275337999999999 0.068560897999999995 0.37720171000000002 0.089164971999999995 0.36917755000000002 0.055768012999999998 0.35477194000000001 0.072449356000000006 0.34050086000000002 0.037211657000000002 0.33995667000000002 0.047027946000000001 0.3204140"
+		+ "9999999998 0.014407367000000001 0.33395794000000001 0.017077981999999998 0.31197449999999999 -0.0076862275999999997 0.33429930000000002 -0.010167262999999999 0.31218912999999998 -0.023250178 0.33758487999999998 -0.027867033999999999 0.31571427000000002 0.22944033 0.38884452000000003 0.21387610000000001 0.38555893000000002 0.21635729000000001 0.36344876999999998 0.23405717000000001 0.36697408999999998 0.19178265 0.38521758 0.18911198000000001 0.36323412999999999 0.16897841 0.39121631000000001 0.159162 0.37167372999999998 0.15042193000000001 0.40603158 0.13374053999999999 0.39176055999999998 0.13762911999999999 0.42846139999999999 0.11702493 0.42043736999999998 0.13125550999999999 0.45638417999999997 0.109184 0.45401299000000001 0.13157558 0.48721966 0.10943338 0.48949048000000001 0.13733956 0.51655262999999996 0.11605841 0.52301072999999998 0.14691688 0.53950989000000005 0.12830101999999999 0.55129605999999998 0.15875818 0.55264568000000003 0.14601262000000001 0.57038343000000002 0.17163832000000001 0.55822795"
+		+ "999999997 0.16569892999999999 0.57955825000000005 0.18441382000000001 0.55995249999999996 0.18232867 0.58218879000000001 0.19663595 0.56059866999999997 0.19709404 0.58288622000000001 0.21063593 0.55927979999999999 0.21460294999999999 0.58119505999999999 0.22944033 0.55419242000000002 0.23527770000000001 0.57576912999999996 -0.11385571 0.81217706000000001 -0.14528663 0.81217706000000001 -0.14528663 0.58667833000000003 -0.11385571 0.58667833000000003 -0.17023045000000001 0.81217706000000001 -0.17023045000000001 0.58667833000000003 -0.079014234000000003 0.81217706000000001 -0.079014234000000003 0.58667833000000003 -0.044172718999999999 0.81217706000000001 -0.044172718999999999 0.58667833000000003 -0.012741796999999999 0.81217706000000001 -0.012741796999999999 0.58667833000000003 0.012201905000000001 0.81217706000000001 0.012201905000000001 0.58667833000000003 -0.32771915000000001 0.81217706000000001 -0.35915005 0.81217706000000001 -0.35914993000000001 0.58667833000000003 -0.32771903000000002 0.58667833000000003 "
+		+ "-0.39399159 0.81217706000000001 -0.39399147000000001 0.58667833000000003 -0.30277532000000001 0.81217706000000001 -0.30277532000000001 0.58667833000000003 -0.42883306999999998 0.81217693999999996 -0.42883294999999999 0.58667826999999995 -0.46026402999999999 0.81217693999999996 -0.46026391 0.58667820999999998 -0.48520785999999999 0.81217693999999996 -0.48520774 0.58667826999999995 0.27317160000000001 0.1032498 0.30011242999999999 0.1032498 0.30011242999999999 0.31284448999999998 0.27317153999999999 0.31284448999999998 0.32149278999999997 0.1032498 0.32149291000000002 0.31284448999999998 0.24330748999999999 0.1032498 0.24330748999999999 0.31284448999999998 0.21344334000000001 0.1032498 0.21344321999999999 0.31284448999999998 0.18650264 0.1032498 0.18650246000000001 0.31284448999999998 0.16512210999999999 0.1032498 0.16512223000000001 0.31284448999999998 -0.083477832000000002 0.1032498 -0.056536950000000002 0.1032498 -0.056537189000000002 0.31284448999999998 -0.083478011000000005 0.31284448999999998 -0.026672885"
+		+ " 0.1032498 -0.026672885 0.31284448999999998 -0.10485815 0.1032498 -0.10485815 0.31284448999999998 0.0031912401000000002 0.10324986 0.0031912997000000001 0.31284454 0.030131996000000001 0.10324986 0.030132174000000001 0.31284454 0.051512301000000003 0.10324986 0.051512301000000003 0.31284454 -0.32646554999999999 -0.039461069000000001 -0.31692708000000003 -0.039461069000000001 -0.31692708000000003 -0.019014343999999999 -0.32646554999999999 -0.019028529999999998 -0.31692708000000003 -0.0016987892000000001 -0.32646554999999999 -0.0016999217000000001 -0.33604038000000003 -0.039461069000000001 -0.33604038000000003 -0.019028529999999998 -0.31692708000000003 0.012903675 -0.32646554999999999 0.012905402999999999 -0.33604038000000003 -0.0016999217000000001 -0.34572393000000001 -0.039461069000000001 -0.34572393000000001 -0.019028529999999998 -0.31692708000000003 0.029349846999999998 -0.32646554999999999 0.029405756000000002 -0.33604038000000003 0.012905402999999999 -0.34572393000000001 -0.0016999217000000001 -0.35544388"
+		+ "999999998 -0.019014343999999999 -0.35544388999999998 -0.039461069000000001 -0.31692708000000003 0.048819080000000001 -0.32646554999999999 0.049113639000000001 -0.33604038000000003 0.029405756000000002 -0.34572393000000001 0.012905402999999999 -0.35544388999999998 -0.0016987892000000001 -0.31692708000000003 0.066335112000000002 -0.32646554999999999 0.066601842999999994 -0.33604038000000003 0.049113639000000001 -0.34572393000000001 0.029405756000000002 -0.35544388999999998 0.012903675 -0.33604038000000003 0.066601842999999994 -0.34572393000000001 0.049113639000000001 -0.35544388999999998 0.029349846999999998 -0.34572393000000001 0.066601842999999994 -0.35544388999999998 0.048819080000000001 -0.35544388999999998 0.066335112000000002 -0.34599977999999998 -0.017264292000000001 -0.33650750000000001 -0.017050967 -0.33650750000000001 0.012425139 -0.34599977999999998 0.012400522000000001 -0.33650750000000001 -0.042070090999999997 -0.34599977999999998 -0.042369008 -0.33650750000000001 0.039239295 -0.34599977999999998 0"
+		+ ".039250559999999997 -0.35552830000000002 -0.017264292000000001 -0.35552830000000002 0.012400522000000001 -0.35552830000000002 -0.042369008 -0.33650750000000001 -0.058521204 -0.34599977999999998 -0.058742217999999999 -0.33650750000000001 0.056659050000000002 -0.34599977999999998 0.056659050000000002 -0.35552830000000002 0.039250559999999997 -0.365165 -0.017264411 -0.365165 0.012400522000000001 -0.365165 -0.042369008 -0.35552830000000002 0.056659050000000002 -0.365165 0.039250559999999997 -0.37483792999999999 0.012425139 -0.37483792999999999 -0.017050967 -0.37483792999999999 -0.042070090999999997 -0.365165 0.056659050000000002 -0.37483792999999999 0.039239295 -0.37483792999999999 -0.058521204 -0.365165 -0.058742217999999999 -0.37483792999999999 0.056659050000000002 -0.24161421 0.063372238999999997 -0.24161421 0.044753834999999999 -0.23206455000000001 0.044753834999999999 -0.23206455000000001 0.063372238999999997 -0.25120014000000002 0.063372238999999997 -0.25120014000000002 0.044753834999999999 -0.24161421 0.03"
+		+ "0892177 -0.23206455000000001 0.030892177 -0.26089488999999999 0.063372238999999997 -0.26089488999999999 0.044753834999999999 -0.25120014000000002 0.030892177 -0.24161421 0.018791003000000001 -0.23206455000000001 0.018791003000000001 -0.27062618999999999 0.044753834999999999 -0.27062618999999999 0.063372238999999997 -0.26089488999999999 0.030892177 -0.25120014000000002 0.018791003000000001 -0.24161421 0.0061418143999999999 -0.23206455000000001 0.0061418143999999999 -0.27062618999999999 0.030892177 -0.26089488999999999 0.018791003000000001 -0.25120014000000002 0.0061418143999999999 -0.24161421 -0.0066109877000000003 -0.23206455000000001 -0.0066109877000000003 -0.27062618999999999 0.018791003000000001 -0.26089488999999999 0.0061418143999999999 -0.25120014000000002 -0.0066109877000000003 -0.24161421 -0.018335148999999999 -0.23206455000000001 -0.018335148999999999 -0.27062618999999999 0.0061418143999999999 -0.26089488999999999 -0.0066109877000000003 -0.25120014000000002 -0.018335148999999999 -0.27062618999999999 -"
+		+ "0.0066109877000000003 -0.26089488999999999 -0.018335148999999999 -0.27062618999999999 -0.018335148999999999 -0.19756824000000001 0.046840712 -0.19756824000000001 0.024225993000000001 -0.18800341000000001 0.024225993000000001 -0.18800341000000001 0.046840712 -0.2071694 0.046840712 -0.2071694 0.024225993000000001 -0.19756824000000001 0.0023160451000000001 -0.18800341000000001 0.0023160451000000001 -0.18800341000000001 0.065243110000000007 -0.19756824000000001 0.065243110000000007 -0.21687977 0.046840712 -0.21687977 0.024225993000000001 -0.2071694 0.0023160451000000001 -0.2071694 0.065243110000000007 -0.19756824000000001 -0.013118729000000001 -0.18800341000000001 -0.013118729000000001 -0.22662644000000001 0.024225993000000001 -0.22662644000000001 0.046840712 -0.21687977 0.0023160451000000001 -0.21687977 0.065243110000000007 -0.2071694 -0.013118729000000001 -0.22662644000000001 0.0023160451000000001 -0.22662644000000001 0.065243110000000007 -0.21687977 -0.013118729000000001 -0.22662644000000001 -0.013118729000000"
+		+ "001 0.16599621000000001 0.80196016999999997 0.16831273999999999 0.80650644999999999 0.15511875 0.81609231000000004 0.1504858 0.80699968 0.18150670999999999 0.79692041999999996 0.17192076000000001 0.81011438000000002"
+		)
+		2 "Mug13:polyTweakUV7" "uvtk[250:499]" (" 0.1623347 0.82330840999999999 0.14192474999999999 0.82567840999999997 0.13497522000000001 0.81203932000000001 0.16519809999999999 0.79692041999999996 0.14888944000000001 0.79692041999999996 0.17646711000000001 0.81243085999999998 0.17142737999999999 0.82794135999999996 0.15274874999999999 0.83650237000000005 0.12873071 0.83526438000000003 0.11946476 0.81707907000000002 0.13258067000000001 0.79692041999999996 0.16599621000000001 0.79188073000000003 0.15048582999999999 0.78684114999999999 0.18150670999999999 0.81322908000000005 0.18150670999999999 0.82953774999999996 0.16638771999999999 0.84345186000000005 0.14316274000000001 0.84969640000000002 0.11553672 0.84485041999999999 0.10395434000000001 0.82211875999999995 0.116272 0.79692041999999996 0.13497537000000001 0.78180145999999995 0.16831273999999999 0.78733443999999997 0.15511875 0.77774834999999998 0.18654633000000001 0.81243085999999998 0.19158605000000001 0.82794135999999996 0.18150670999999999 0.84584641000000005 0.161348 0.85896229999999996 0.133576720"
+		+ "00000001 0.86289042000000005 0.10234272 0.85443639999999998 0.088443815999999995 0.82715833000000005 0.099963336999999999 0.79692041999999996 0.11946487 0.77676177000000002 0.14192468999999999 0.76816231000000001 0.17192076000000001 0.78372633000000003 0.1623347 0.77053236999999997 0.19109272999999999 0.81011438000000002 0.20067872 0.82330840999999999 0.19662566000000001 0.84345186000000005 0.18150670999999999 0.86215514000000004 0.15630846000000001 0.87447280000000005 0.12399068000000001 0.87608439000000005 0.089148729999999995 0.86402243000000001 0.072933435000000005 0.83219801999999998 0.083654701999999997 0.79692041999999996 0.10395443 0.77172207999999998 0.12873076999999999 0.75857638999999999 0.15274866000000001 0.75733846000000005 0.17646711000000001 0.78140991999999998 0.17142747 0.76589936000000003 0.19470072999999999 0.80650644999999999 0.20789471000000001 0.81609237000000001 0.21026468000000001 0.83650237000000005 0.20166539999999999 0.85896229999999996 0.18150670999999999 0.87846374999999999 0.151"
+		+ "26874000000001 0.88998330000000003 0.11440467999999999 0.88927840999999996 0.067346065999999996 0.79692041999999996 0.088443905000000003 0.76668250999999998 0.11553681 0.74899042000000005 0.14316276999999999 0.74414444000000002 0.16638775 0.75038897999999998 0.18150670999999999 0.78061175000000005 0.18150670999999999 0.76430297000000003 0.19701717999999999 0.80196016999999997 0.21252768999999999 0.80699968 0.22108875 0.82567835000000001 0.21985076000000001 0.84969640000000002 0.206705 0.87447280000000005 0.18150670999999999 0.89477247000000004 0.14622913000000001 0.90549374000000005 0.072933375999999994 0.76164281 0.10234277999999999 0.73940437999999997 0.13357674999999999 0.73095041999999999 0.16134809 0.73487853999999997 0.18150670999999999 0.74799435999999997 0.18654633000000001 0.78140991999999998 0.19158605000000001 0.76589936000000003 0.19781536999999999 0.79692041999999996 0.21412402 0.79692041999999996 0.22803809999999999 0.81203937999999998 0.23428262999999999 0.83526444 0.22943673000000001 0.8628903"
+		+ "5999999997 0.21174472999999999 0.88998330000000003 0.18150670999999999 0.91108113999999996 0.089148699999999997 0.72981845999999995 0.12399071 0.71775639000000002 0.15630848999999999 0.71936798000000002 0.18150670999999999 0.73168564000000003 0.19662566000000001 0.75038897999999998 0.19109272999999999 0.78372633000000003 0.20067872 0.77053236999999997 0.19701717999999999 0.79188073000000003 0.21252768999999999 0.78684114999999999 0.23043274999999999 0.79692041999999996 0.24354853000000001 0.81707907000000002 0.24747675999999999 0.84485041999999999 0.23902272999999999 0.87608445000000001 0.21678433 0.90549374000000005 0.11440471000000001 0.70456242999999996 0.15126877 0.70385759999999997 0.18150670999999999 0.71537702999999997 0.20166539999999999 0.73487853999999997 0.21026465 0.75733846000000005 0.19470072999999999 0.78733443999999997 0.20789471000000001 0.77774834999999998 0.22803809999999999 0.78180145999999995 0.24674146999999999 0.79692041999999996 0.25905907 0.82211864000000001 0.26067066 0.8544363999999"
+		+ "9998 0.24860878 0.88927840999999996 0.14622916 0.68834709999999999 0.18150670999999999 0.69906836999999999 0.206705 0.71936798000000002 0.21985070000000001 0.74414444000000002 0.22108875 0.76816231000000001 0.24354853000000001 0.77676177000000002 0.26305008000000002 0.79692041999999996 0.27456951000000002 0.82715833000000005 0.27386474999999999 0.86402237000000004 0.18150670999999999 0.68275969999999997 0.21174472999999999 0.70385759999999997 0.22943667000000001 0.73095041999999999 0.23428262999999999 0.75857638999999999 0.25905907 0.77172207999999998 0.27935873999999999 0.79692041999999996 0.29008001 0.83219796000000001 0.21678433 0.68834709999999999 0.23902272999999999 0.71775639000000002 0.24747667000000001 0.74899042000000005 0.27456951000000002 0.76668250999999998 0.29566746999999999 0.79692041999999996 0.24860874999999999 0.70456242999999996 0.26067066 0.73940437999999997 0.29008001 0.76164281 0.27386469000000002 0.72981834000000001 -0.37008302999999998 0.48109245 -0.35386759000000001 0.4492681299999999"
+		+ "9 -0.34067363000000001 0.45885405000000001 -0.35457246999999997 0.48613213999999999 -0.32861167000000002 0.42401209000000001 -0.31902564 0.43720611999999998 -0.37567031000000001 0.51637005999999996 -0.35936164999999998 0.51637005999999996 -0.29678719999999997 0.40779683 -0.29174762999999998 0.42330727000000001 -0.37008290999999999 0.55164771999999995 -0.35457242 0.54660803000000002 -0.26150960000000001 0.40220930999999999 -0.26150960000000001 0.41851798000000001 -0.35386752999999999 0.58347212999999998 -0.34067356999999998 0.57388603999999999 -0.22623198 0.40779683 -0.23127160999999999 0.42330727000000001 -0.32861167000000002 0.60872804999999997 -0.31902557999999998 0.59553409000000002 -0.19440757 0.42401214999999998 -0.20399354 0.43720611999999998 -0.29678714 0.62494338000000005 -0.29174757000000001 0.609433 -0.16915166000000001 0.44926807000000002 -0.18234566999999999 0.45885405000000001 -0.26150960000000001 0.63053077000000002 -0.26150960000000001 0.61422217000000001 -0.15293634 0.48109245 -0.1684467799999"
+		+ "9999 0.48613213999999999 -0.22623198 0.62494338000000005 -0.23127160999999999 0.609433 -0.14734881 0.51637005999999996 -0.16365755000000001 0.51637005999999996 -0.19440757 0.60872804999999997 -0.20399354 0.59553409000000002 -0.15293634 0.55164771999999995 -0.16844677999999999 0.54660803000000002 -0.16915172000000001 0.58347212999999998 -0.18234566999999999 0.57388603999999999 -0.47729355000000001 0.22118855000000001 -0.46339469999999999 0.19391032999999999 -0.45020068000000002 0.20349639999999999 -0.46178311 0.22622818 -0.44174670999999999 0.17226227999999999 -0.43216068000000002 0.18545631000000001 -0.43700671000000002 0.21308242999999999 -0.44627266999999998 0.23126786999999999 -0.48208272000000002 0.25142639999999999 -0.46577405999999999 0.25142639999999999 -0.41446871000000002 0.15836349 -0.40942900999999998 0.17387411 -0.42257464 0.19865033000000001 -0.42381268999999999 0.22266834999999999 -0.43076223000000002 0.2363075 -0.44946539000000002 0.25142639999999999 -0.47729343000000002 0.28166451999999997 -0."
+		+ "46178311 0.27662477000000002 -0.38423060999999997 0.15357438000000001 -0.38423060999999997 0.16988304000000001 -0.40438932 0.18938455000000001 -0.41298878 0.21184421000000001 -0.41061871999999999 0.23225439000000001 -0.41525167000000002 0.24134722 -0.43315672999999999 0.25142628 -0.44627261000000001 0.27158507999999998 -0.46339469999999999 0.30894259000000002 -0.45020062 0.29935643000000001 -0.35399276000000002 0.15836367000000001 -0.35903233000000001 0.17387411 -0.38423060999999997 0.18619164999999999 -0.39934968999999998 0.20489495999999999 -0.40340262999999998 0.22503835 -0.39742464 0.24183992000000001 -0.39974116999999998 0.24638732999999999 -0.41684806000000002 0.25142628 -0.43076210999999998 0.26654520999999998 -0.43700665 0.28977033000000002 -0.44174665000000002 0.33059028000000001 -0.43216068000000002 0.31739631000000001 -0.32671463000000001 0.17226252 -0.33630061 0.18545642000000001 -0.36407208000000002 0.18938448999999999 -0.38423060999999997 0.2025004 -0.39431 0.22040546 -0.39381664999999999 0.2382"
+		+ "3193000000001 -0.38423060999999997 0.25142646000000002 -0.40053928 0.25142688000000002 -0.41525167000000002 0.26150548000000001 -0.42381268999999999 0.28018441999999999 -0.42257464 0.30420235000000001 -0.41446859000000003 0.34448925000000002 -0.40942900999999998 0.32897874999999999 -0.30506670000000002 0.19391027 -0.31826067000000002 0.20349639999999999 -0.34588665000000002 0.19865045000000001 -0.36911171999999998 0.20489502000000001 -0.38423060999999997 0.21880912999999999 -0.38927036999999998 0.23591596000000001 -0.39974116999999998 0.25646585 -0.4106186 0.27059844 -0.41298878 0.29100838000000001 -0.40438932 0.31346843000000002 -0.38423060999999997 0.34927859999999999 -0.38423060999999997 0.33296980999999998 -0.29116779999999998 0.22118837 -0.30667830000000001 0.22622812 -0.33145462999999997 0.21308249000000001 -0.35547267999999999 0.21184443999999999 -0.37415134999999999 0.2204054 -0.38423060999999997 0.23511773 -0.39742464 0.26101260999999998 -0.40340262999999998 0.27781442000000001 -0.39934963000000001 0"
+		+ ".29795780999999999 -0.38423060999999997 0.31666115")
+		2 "Mug13:polyTweakUV7" "uvtk[500:651]" (" -0.35399276000000002 0.34448907000000001 -0.35903233000000001 0.32897862999999999 -0.28637856 0.25142639999999999 -0.30268722999999997 0.25142639999999999 -0.32218879 0.23126780999999999 -0.34464866 0.22266841000000001 -0.36505865999999998 0.22503846999999999 -0.37919103999999998 0.23591596000000001 -0.39381664999999999 0.26462068999999999 -0.39430994000000003 0.28244731000000001 -0.38423060999999997 0.30035242000000001 -0.36407208000000002 0.31346843000000002 -0.32671463000000001 0.33059033999999998 -0.33630061 0.31739636999999998 -0.29116779999999998 0.28166451999999997 -0.30667830000000001 0.27662471 -0.31899601 0.25142639999999999 -0.33769923000000002 0.23630738000000001 -0.35784268000000002 0.23225445 -0.3746447 0.23823288000000001 -0.38927036999999998 0.26693675 -0.38423060999999997 0.28404370000000001 -0.36911171999999998 0.29795780999999999 -0.34588665000000002 0.30420240999999998 -0.30506670000000002 0.30894264999999999 -0.31826067000000002 0.29935643000000001 -0.32218879 0.27158490000000002 -0.3353"
+		+ "0462 0.25142628 -0.35320973 0.24134692999999999 -0.37103665000000002 0.24184093000000001 -0.38423060999999997 0.26773518000000002 -0.37415141000000002 0.28244719000000001 -0.35547267999999999 0.29100819999999999 -0.33145462999999997 0.28977027999999999 -0.33769923000000002 0.26654527 -0.35161322 0.25142628 -0.36872022999999998 0.24638673999999999 -0.37919103999999998 0.26693693000000002 -0.36505865999999998 0.27781412 -0.34464866 0.28018418 -0.35320973 0.26150572 -0.36792195 0.25142639999999999 -0.3746447 0.26461985999999998 -0.35784268000000002 0.27059832 -0.36872022999999998 0.25646608999999998 -0.37103665000000002 0.26101190000000002 -0.45544796999999998 -0.082568631000000003 -0.44584656 -0.082559034000000003 -0.44584656 -0.047241747000000001 -0.45544796999999998 -0.047225296 -0.44584656 -0.11592798999999999 -0.45544796999999998 -0.11596070999999999 -0.44584656 -0.013817474 -0.45544796999999998 -0.013730391999999999 -0.46508598000000001 -0.082568631000000003 -0.46508598000000001 -0.047225296 -0.46508598000"
+		+ "000001 -0.11596070999999999 -0.44584656 -0.14408571000000001 -0.45544796999999998 -0.14425569999999999 -0.46508598000000001 -0.013730391999999999 -0.47483349000000002 -0.082568631000000003 -0.47483349000000002 -0.047225296 -0.47483349000000002 -0.11596070999999999 -0.46508598000000001 -0.14425569999999999 -0.46508598000000001 0.014988405999999999 -0.45544796999999998 0.014988405999999999 -0.47483349000000002 -0.013730391999999999 -0.48461753000000002 -0.047241747000000001 -0.48461753000000002 -0.082559034000000003 -0.48461753000000002 -0.11592798999999999 -0.47483349000000002 -0.14425569999999999 -0.47483349000000002 0.014988405999999999 -0.48461753000000002 -0.013817474 -0.48461753000000002 -0.14408571000000001 -0.40974832 0.0042334972000000002 -0.40974832 -0.026442274000000002 -0.40015334000000002 -0.026442274000000002 -0.40015334000000002 0.0042334972000000002 -0.41937988999999998 0.0042334972000000002 -0.41937988999999998 -0.026442274000000002 -0.40974832 -0.054220729000000002 -0.40015334000000002 -0.0542"
+		+ "20729000000002 -0.40015334000000002 0.033414795999999997 -0.40974832 0.033414795999999997 -0.42912096 0.0042334972000000002 -0.42912096 -0.026442274000000002 -0.41937988999999998 -0.054220729000000002 -0.41937988999999998 0.033414795999999997 -0.40974832 -0.076534434999999998 -0.40015334000000002 -0.076534434999999998 -0.40015334000000002 0.056253202000000002 -0.40974832 0.056253202000000002 -0.43889844 -0.026442274000000002 -0.43889844 0.0042334972000000002 -0.42912096 -0.054220729000000002 -0.42912096 0.033414795999999997 -0.41937988999999998 -0.076534434999999998 -0.41937988999999998 0.056253202000000002 -0.43889844 -0.054220729000000002 -0.43889844 0.033414795999999997 -0.42912096 -0.076534434999999998 -0.42912096 0.056253202000000002 -0.43889844 -0.076534434999999998 -0.43889844 0.056253202000000002 -0.17833196000000001 -0.022675379999999998 -0.17833196000000001 -0.032283828000000001 -0.15683685 -0.032283828000000001 -0.15683685 -0.022675379999999998 -0.17833196000000001 -0.013030335000000001 -0.15683685"
+		+ " -0.013030335000000001 -0.17833196000000001 -0.0032757502000000001 -0.15683685 -0.0032757502000000001 -0.17833196000000001 0.0065154460999999999 -0.15683685 0.0065154460999999999 -0.12123398000000001 -0.021411821000000001 -0.12123398000000001 -0.011642931 -0.14305358000000001 -0.011642931 -0.14305358000000001 -0.021411821000000001 -0.12123398000000001 -0.0018373700000000001 -0.14305358000000001 -0.0018373700000000001 -0.12123398000000001 -0.031070942000000001 -0.14305358000000001 -0.031070942000000001 -0.12123398000000001 -0.040693462 -0.14305358000000001 -0.040693462 -0.20166139 0.81217706000000001 -0.20166139 0.58667833000000003 -0.23650283 0.81217706000000001 -0.23650283 0.58667833000000003 -0.27134436000000001 0.81217706000000001 -0.27134436000000001 0.58667833000000003 -0.51663882000000005 0.81217693999999996 -0.51663870000000001 0.58667820999999998 -0.55148023000000002 0.81217693999999996 -0.55148010999999997 0.58667820999999998 -0.58632158999999995 0.81217693999999996 -0.58632158999999995 0.58667826999"
+		+ "999995 -0.61775267 0.81217687999999999 -0.61775267 0.58667826999999995 0.34843349000000001 0.1032498 0.34843373 0.31284448999999998 0.37829769000000002 0.10324974000000001 0.37829792000000001 0.31284443000000001 0.40816187999999998 0.10324974000000001 0.408162 0.31284443000000001 0.43510263999999998 0.10324968 0.43510293999999999 0.31284424999999999 0.078453182999999996 0.10324986 0.078453332000000001 0.31284454 0.10831726 0.1032498 0.10831739999999999 0.31284448999999998 0.13818136 0.10324986 0.13818148 0.31284454"
+		)
 		5 3 "MugRN" "Mug13:Colors_1.message" "MugRN.placeHolderList[1]" ""
 		5 3 "MugRN" "Mug13:place2dTexture1.message" "MugRN.placeHolderList[2]" 
 		""
@@ -87095,15 +85820,17 @@ select -ne :renderPartition;
 	setAttr -s 3 ".st";
 select -ne :renderGlobalsList1;
 select -ne :defaultShaderList1;
-	setAttr -s 5 ".s";
+	setAttr -s 6 ".s";
 select -ne :postProcessList1;
 	setAttr -s 2 ".p";
 select -ne :defaultRenderUtilityList1;
 select -ne :defaultRenderingList1;
 	setAttr -s 2 ".r";
 select -ne :defaultTextureList1;
-select -ne :lambert1;
 select -ne :standardSurface1;
+	setAttr ".bc" -type "float3" 0.40000001 0.40000001 0.40000001 ;
+	setAttr ".sr" 0.5;
+select -ne :openPBR_shader1;
 	setAttr ".bc" -type "float3" 0.40000001 0.40000001 0.40000001 ;
 	setAttr ".sr" 0.5;
 select -ne :initialShadingGroup;
