@@ -1,6 +1,6 @@
 //Maya ASCII 2025ff03 scene
 //Name: Stools and Benches.ma
-//Last modified: Fri, Nov 14, 2025 04:05:18 PM
+//Last modified: Fri, Nov 14, 2025 04:06:50 PM
 //Codeset: 1252
 requires maya "2025ff03";
 requires -nodeType "materialxStack" -dataType "MxDocumentStackData" "LookdevXMaya" "1.6.0";
@@ -13,7 +13,7 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202409190603-cbdc5a7e54";
 fileInfo "osv" "Windows 11 Enterprise v2009 (Build: 26100)";
-fileInfo "UUID" "41CC958D-4AE2-15CD-5F5D-178843E9F604";
+fileInfo "UUID" "E176777F-481F-2E43-909B-D0BBB367911D";
 fileInfo "license" "education";
 createNode transform -n "Furniture";
 	rename -uid "607DE88F-41EE-B6FD-177C-C3A0B9BD6AA8";
@@ -2989,8 +2989,8 @@ createNode mesh -n "polySurfaceShape1" -p "Stool13";
 createNode transform -s -n "persp";
 	rename -uid "06D8492F-4EFD-76AB-8DC8-91873745D533";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 97.092080762518819 61.043403351456789 72.198637606356726 ;
-	setAttr ".r" -type "double3" -27.938352728836033 1137.3999999998534 0 ;
+	setAttr ".t" -type "double3" 117.55654676314929 29.379495330703016 58.253831760789794 ;
+	setAttr ".r" -type "double3" -12.938352728817843 1147.7999999998217 -2.1044278386542748e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "F825C2E7-49DE-A657-12A3-87816C8C6F68";
 	setAttr -k off ".v" no;
