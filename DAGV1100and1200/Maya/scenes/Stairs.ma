@@ -1,6 +1,6 @@
 //Maya ASCII 2025ff03 scene
 //Name: Stairs.ma
-//Last modified: Fri, Nov 21, 2025 03:48:01 PM
+//Last modified: Fri, Nov 21, 2025 03:49:25 PM
 //Codeset: 1252
 requires maya "2025ff03";
 requires -nodeType "materialxStack" -nodeType "MaterialXSurfaceShader" -dataType "MxDocumentStackData"
@@ -14,20 +14,20 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202409190603-cbdc5a7e54";
 fileInfo "osv" "Windows 11 Enterprise v2009 (Build: 26100)";
-fileInfo "UUID" "456FE9C2-42B6-E1F1-D403-5082585AE7D8";
+fileInfo "UUID" "0EA7A2B7-4344-2C3C-CC99-999B17B4F3AD";
 fileInfo "license" "education";
 createNode transform -n "Stairs";
 	rename -uid "8374338E-4B1C-772D-4525-3EA2AC9645B9";
 createNode transform -s -n "persp";
 	rename -uid "C296FDC9-4148-F133-736C-548C71014578";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 7.6096650800814061 29.38697069416979 4.5802045747773459 ;
+	setAttr ".t" -type "double3" 17.415268038178599 35.309514244422786 14.949338973120899 ;
 	setAttr ".r" -type "double3" -22.538352729636944 403.39999999998838 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "986D511A-42F6-8594-2AD8-0DBA49E85619";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 35.678596449693373;
+	setAttr ".coi" 51.129982136660075;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
