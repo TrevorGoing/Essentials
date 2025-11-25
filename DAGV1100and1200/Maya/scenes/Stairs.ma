@@ -1,6 +1,6 @@
 //Maya ASCII 2026 scene
 //Name: Stairs.ma
-//Last modified: Mon, Nov 24, 2025 07:12:59 PM
+//Last modified: Mon, Nov 24, 2025 07:21:46 PM
 //Codeset: 1252
 requires maya "2026";
 requires "stereoCamera" "10.0";
@@ -11,7 +11,7 @@ fileInfo "product" "Maya 2026";
 fileInfo "version" "2026";
 fileInfo "cutIdentifier" "202507081222-4d6919b75c";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26200)";
-fileInfo "UUID" "714F5BD7-4969-700F-E48A-1F81686D4F5F";
+fileInfo "UUID" "913280F6-46A2-A1FE-4FF3-978B7B5A2335";
 createNode transform -n "Stairs";
 	rename -uid "8374338E-4B1C-772D-4525-3EA2AC9645B9";
 createNode transform -n "Front_Staris" -p "Stairs";
@@ -1452,7 +1452,7 @@ createNode lambert -n "lambert2";
 createNode shadingEngine -n "lambert2SG";
 	rename -uid "CC06E9F5-4C08-4CC9-BA36-2AB3AB596348";
 	setAttr ".ihi" 0;
-	setAttr -s 4 ".dsm";
+	setAttr -s 3 ".dsm";
 	setAttr ".ro" yes;
 createNode materialInfo -n "materialInfo2";
 	rename -uid "202373E6-4801-313D-D0ED-43B366A823D4";
@@ -1463,7 +1463,7 @@ createNode file -n "Tavern_Colors_2_1";
 createNode place2dTexture -n "place2dTexture1";
 	rename -uid "5E143CA6-4DFA-750B-D2D1-77801A3B9FD5";
 createNode nodeGraphEditorInfo -n "hyperShadePrimaryNodeEditorSavedTabsInfo";
-	rename -uid "4B00FDF0-4431-40A2-2DAC-229F8E0E3756";
+	rename -uid "202B88B4-4A80-C3FA-C696-ECAF7491771B";
 	setAttr ".tgi[0].tn" -type "string" "Untitled_1";
 	setAttr ".tgi[0].vl" -type "double2" -516.8468489143994 -923.55288082060474 ;
 	setAttr ".tgi[0].vh" -type "double2" 400.7083425934909 5.7874232387631865 ;
