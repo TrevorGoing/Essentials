@@ -1,6 +1,6 @@
 //Maya ASCII 2026 scene
 //Name: Scene 2.ma
-//Last modified: Mon, Dec 08, 2025 12:20:03 PM
+//Last modified: Mon, Dec 08, 2025 03:20:08 PM
 //Codeset: 1252
 file -rdi 1 -ns "Mug13" -rfn "MugRN" -op "v=0;" -typ "mayaAscii" "C:/Users/11099963/Documents/GitHub/Essentials/DAGV1100and1200/Maya//scenes/Mug.ma";
 file -rdi 1 -ns "Tavern_Tables_2" -rfn "Tavern_Tables_2RN" -op "v=0;" -typ "mayaAscii"
@@ -9,12 +9,14 @@ file -rdi 1 -ns "Stools_and_Benches" -rfn "Stools_and_BenchesRN" -op "v=0;"
 		 -typ "mayaAscii" "C:/Users/trevg/Documents/GitHub/Essentials/DAGV1100and1200/Maya//scenes/Stools and Benches.ma";
 file -rdi 1 -ns "Tavern_Bar" -rfn "Tavern_BarRN" -op "v=0;" -typ "mayaAscii"
 		 "C:/Users/trevg/Documents/GitHub/Essentials/DAGV1100and1200/Maya//scenes/Tavern Bar.ma";
-file -rdi 1 -ns "Tavern_Bar1" -rfn "Tavern_BarRN1" -op "v=0;" -typ "mayaAscii"
+file -rdi 1 -ns "Tavern_Bar1" -dr 1 -rfn "Tavern_BarRN1" -op "v=0;" -typ "mayaAscii"
 		 "C:/Users/trevg/Documents/GitHub/Essentials/DAGV1100and1200/Maya//scenes/Tavern Bar.ma";
 file -rdi 1 -ns "Stairs1" -rfn "StairsRN" -op "v=0;" -typ "mayaAscii" "C:/Users/trevg/Documents/GitHub/Essentials/DAGV1100and1200/Maya//scenes/Stairs.ma";
 file -rdi 1 -ns "Chandaler" -rfn "ChandalerRN" -op "v=0;" -typ "mayaAscii" "C:/Users/trevg/Documents/GitHub/Essentials/DAGV1100and1200/Maya//scenes/Chandaler.ma";
 file -rdi 2 -ns "Tavern_Tables_2" -dr 1 -rfn "Chandaler:Tavern_Tables_2RN" 
 		-op "v=0;" -typ "mayaAscii" "C:/Users/trevg/Documents/GitHub/Essentials/DAGV1100and1200/Maya//scenes/Tavern Tables 2.ma";
+file -rdi 1 -ns "Tavern_Bar2" -rfn "Tavern_BarRN2" -op "v=0;" -typ "mayaAscii"
+		 "C:/Users/trevg/Documents/GitHub/Essentials/DAGV1100and1200/Maya//scenes/Tavern Bar.ma";
 file -r -ns "Mug13" -dr 1 -rfn "MugRN" -op "v=0;" -typ "mayaAscii" "C:/Users/11099963/Documents/GitHub/Essentials/DAGV1100and1200/Maya//scenes/Mug.ma";
 file -r -ns "Tavern_Tables_2" -dr 1 -rfn "Tavern_Tables_2RN" -op "v=0;" -typ "mayaAscii"
 		 "C:/Users/trevg/Documents/GitHub/Essentials/DAGV1100and1200/Maya//scenes/Tavern Tables 2.ma";
@@ -25,6 +27,8 @@ file -r -ns "Tavern_Bar1" -dr 1 -rfn "Tavern_BarRN1" -op "v=0;" -typ "mayaAscii"
 		 "C:/Users/trevg/Documents/GitHub/Essentials/DAGV1100and1200/Maya//scenes/Tavern Bar.ma";
 file -r -ns "Stairs1" -dr 1 -rfn "StairsRN" -op "v=0;" -typ "mayaAscii" "C:/Users/trevg/Documents/GitHub/Essentials/DAGV1100and1200/Maya//scenes/Stairs.ma";
 file -r -ns "Chandaler" -dr 1 -rfn "ChandalerRN" -op "v=0;" -typ "mayaAscii" "C:/Users/trevg/Documents/GitHub/Essentials/DAGV1100and1200/Maya//scenes/Chandaler.ma";
+file -r -ns "Tavern_Bar2" -dr 1 -rfn "Tavern_BarRN2" -op "v=0;" -typ "mayaAscii"
+		 "C:/Users/trevg/Documents/GitHub/Essentials/DAGV1100and1200/Maya//scenes/Tavern Bar.ma";
 requires maya "2026";
 requires "stereoCamera" "10.0";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" -nodeType "aiImagerDenoiserOidn"
@@ -35,18 +39,18 @@ fileInfo "product" "Maya 2026";
 fileInfo "version" "2026";
 fileInfo "cutIdentifier" "202507081222-4d6919b75c";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26200)";
-fileInfo "UUID" "E97D2D07-48BE-C210-C1B7-67980BEF8CC7";
+fileInfo "UUID" "27E6A066-41A2-22C3-D5A6-69A23002B163";
 fileInfo "license" "education";
 createNode transform -s -n "persp";
 	rename -uid "2F4FEB29-4955-C5FE-E7F3-C8ABE7981416";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 95.995485267282177 35.112007350979901 166.79554316467767 ;
-	setAttr ".r" -type "double3" -8.1383527296200029 31.399999999994854 4.6578286430289035e-16 ;
+	setAttr ".t" -type "double3" 2.6843294971512819 41.494118357126474 289.07927230968107 ;
+	setAttr ".r" -type "double3" -5.1383527296207205 -5 -4.9885998181944388e-17 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "F7B902AF-469D-0CBF-3819-B9A164614C36";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 171.61836517696022;
+	setAttr ".coi" 263.74841503001113;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -236766,7 +236770,7 @@ createNode mesh -n "polySurfaceShape4" -p "pSphere6";
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode fosterParent -n "Tavern_Tables_2RNfosterParent1";
-	rename -uid "E0C58347-4EDB-F84F-159A-80ABE4225EB4";
+	rename -uid "2B753BC3-42F5-DC6A-8862-70A54BD0C463";
 createNode transform -n "Table_Middle7" -p "Tavern_Tables_2RNfosterParent1";
 	rename -uid "C43E07CC-4CF6-C4F4-1FF2-11AA0B969BCC";
 	setAttr ".t" -type "double3" 50.518550065187497 -1.0658141036401503e-14 -53.757366695462096 ;
@@ -239433,7 +239437,7 @@ createNode mesh -n "polySurfaceShape1" -p "Table_Middle3";
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode fosterParent -n "Stools_and_BenchesRNfosterParent1";
-	rename -uid "2A877216-410F-5327-3FF3-C891FA34F886";
+	rename -uid "A7B61ACA-43EB-B4A3-D073-559836338F44";
 createNode transform -n "Stool17" -p "Stools_and_BenchesRNfosterParent1";
 	rename -uid "93B726D3-4184-2488-E0E7-A7A1B8B29B53";
 	setAttr ".t" -type "double3" 46.706716200395945 -1.0658141036401503e-14 -58.588262920400481 ;
@@ -244226,8 +244230,8 @@ createNode mesh -n "Stool8Shape" -p "Stool8";
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode lightLinker -s -n "lightLinker1";
 	rename -uid "001AA548-4C80-BE3F-FB1A-939C0C83F9B5";
-	setAttr -s 14 ".lnk";
-	setAttr -s 14 ".slnk";
+	setAttr -s 15 ".lnk";
+	setAttr -s 15 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
 	rename -uid "5906A318-45C2-C919-47F2-85B2EFBEAE30";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
@@ -245143,7 +245147,7 @@ createNode reference -n "Tavern_BarRN";
 		"Tavern_Bar:pCube8Shape.i"
 		5 3 "Tavern_BarRN" "Tavern_Bar:polyTweakUV42.output" "Tavern_BarRN.placeHolderList[8]" 
 		"Tavern_Bar:pCube12Shape.i"
-		"Tavern_BarRN" 31
+		"Tavern_BarRN" 63
 		2 "|Tavern_Bar:polySurface2" "translate" " -type \"double3\" 82.52475739048072967 0 -84.50255817491624555"
 		
 		2 "|Tavern_Bar:polySurface2" "rotate" " -type \"double3\" 0 90 0"
@@ -245157,6 +245161,70 @@ createNode reference -n "Tavern_BarRN";
 		
 		2 "|Tavern_Bar:polySurface2|Tavern_Bar:polySurfaceShape2" "uvPivot" " -type \"double2\" 0.59795033931732178 0.37127992510795593"
 		
+		2 "|Tavern_Bar:polySurface2|Tavern_Bar:polySurfaceShape2" "uvSet[0].uvSetName" 
+		" -type \"string\" \"map1\""
+		2 "|Tavern_Bar:polySurface2|Tavern_Bar:polySurfaceShape2" "uvSet[0].uvSetPoints" 
+		" -s 30"
+		2 "|Tavern_Bar:polySurface2|Tavern_Bar:polySurfaceShape2" "uvSet[0].uvSetPoints[0]" 
+		" -type \"float2\" 0.55537628999999999 0.25944644"
+		2 "|Tavern_Bar:polySurface2|Tavern_Bar:polySurfaceShape2" "uvSet[0].uvSetPoints[1]" 
+		" -type \"float2\" 0.62786673999999998 0.25944644"
+		2 "|Tavern_Bar:polySurface2|Tavern_Bar:polySurfaceShape2" "uvSet[0].uvSetPoints[2]" 
+		" -type \"float2\" 0.62786686000000003 0.48311328999999997"
+		2 "|Tavern_Bar:polySurface2|Tavern_Bar:polySurfaceShape2" "uvSet[0].uvSetPoints[3]" 
+		" -type \"float2\" 0.55537634999999996 0.48311328999999997"
+		2 "|Tavern_Bar:polySurface2|Tavern_Bar:polySurfaceShape2" "uvSet[0].uvSetPoints[4]" 
+		" -type \"float2\" 0.58448904999999995 0.34370255"
+		2 "|Tavern_Bar:polySurface2|Tavern_Bar:polySurfaceShape2" "uvSet[0].uvSetPoints[5]" 
+		" -type \"float2\" 0.60913587000000002 0.34370244"
+		2 "|Tavern_Bar:polySurface2|Tavern_Bar:polySurfaceShape2" "uvSet[0].uvSetPoints[6]" 
+		" -type \"float2\" 0.60913587000000002 0.28462815000000002"
+		2 "|Tavern_Bar:polySurface2|Tavern_Bar:polySurfaceShape2" "uvSet[0].uvSetPoints[7]" 
+		" -type \"float2\" 0.58448904999999995 0.28462827000000002"
+		2 "|Tavern_Bar:polySurface2|Tavern_Bar:polySurfaceShape2" "uvSet[0].uvSetPoints[8]" 
+		" -type \"float2\" 0.70122534000000003 0.48311341000000002"
+		2 "|Tavern_Bar:polySurface2|Tavern_Bar:polySurfaceShape2" "uvSet[0].uvSetPoints[9]" 
+		" -type \"float2\" 0.62873495000000001 0.48311341000000002"
+		2 "|Tavern_Bar:polySurface2|Tavern_Bar:polySurfaceShape2" "uvSet[0].uvSetPoints[10]" 
+		" -type \"float2\" 0.62873495000000001 0.25944644"
+		2 "|Tavern_Bar:polySurface2|Tavern_Bar:polySurfaceShape2" "uvSet[0].uvSetPoints[11]" 
+		" -type \"float2\" 0.70122534000000003 0.25944637999999998"
+		2 "|Tavern_Bar:polySurface2|Tavern_Bar:polySurfaceShape2" "uvSet[0].uvSetPoints[12]" 
+		" -type \"float2\" 0.67211257999999996 0.34370244"
+		2 "|Tavern_Bar:polySurface2|Tavern_Bar:polySurfaceShape2" "uvSet[0].uvSetPoints[13]" 
+		" -type \"float2\" 0.67211257999999996 0.28462809"
+		2 "|Tavern_Bar:polySurface2|Tavern_Bar:polySurfaceShape2" "uvSet[0].uvSetPoints[14]" 
+		" -type \"float2\" 0.64746594000000002 0.28462815000000002"
+		2 "|Tavern_Bar:polySurface2|Tavern_Bar:polySurfaceShape2" "uvSet[0].uvSetPoints[15]" 
+		" -type \"float2\" 0.64746594000000002 0.34370244"
+		2 "|Tavern_Bar:polySurface2|Tavern_Bar:polySurfaceShape2" "uvSet[0].uvSetPoints[16]" 
+		" -type \"float2\" 0.70209348000000005 0.25944637999999998"
+		2 "|Tavern_Bar:polySurface2|Tavern_Bar:polySurfaceShape2" "uvSet[0].uvSetPoints[17]" 
+		" -type \"float2\" 0.70209354000000002 0.48311328999999997"
+		2 "|Tavern_Bar:polySurface2|Tavern_Bar:polySurfaceShape2" "uvSet[0].uvSetPoints[18]" 
+		" -type \"float2\" 0.67124450000000002 0.34370244"
+		2 "|Tavern_Bar:polySurface2|Tavern_Bar:polySurfaceShape2" "uvSet[0].uvSetPoints[19]" 
+		" -type \"float2\" 0.67124450000000002 0.28462815000000002"
+		2 "|Tavern_Bar:polySurface2|Tavern_Bar:polySurfaceShape2" "uvSet[0].uvSetPoints[20]" 
+		" -type \"float2\" 0.64833403000000001 0.34370255"
+		2 "|Tavern_Bar:polySurface2|Tavern_Bar:polySurfaceShape2" "uvSet[0].uvSetPoints[21]" 
+		" -type \"float2\" 0.64833403000000001 0.28462815000000002"
+		2 "|Tavern_Bar:polySurface2|Tavern_Bar:polySurfaceShape2" "uvSet[0].uvSetPoints[22]" 
+		" -type \"float2\" 0.70122534000000003 0.25857824000000001"
+		2 "|Tavern_Bar:polySurface2|Tavern_Bar:polySurfaceShape2" "uvSet[0].uvSetPoints[23]" 
+		" -type \"float2\" 0.62873495000000001 0.25857829999999998"
+		2 "|Tavern_Bar:polySurface2|Tavern_Bar:polySurfaceShape2" "uvSet[0].uvSetPoints[24]" 
+		" -type \"float2\" 0.70122534000000003 0.48398149000000001"
+		2 "|Tavern_Bar:polySurface2|Tavern_Bar:polySurfaceShape2" "uvSet[0].uvSetPoints[25]" 
+		" -type \"float2\" 0.62873495000000001 0.48398149000000001"
+		2 "|Tavern_Bar:polySurface2|Tavern_Bar:polySurfaceShape2" "uvSet[0].uvSetPoints[26]" 
+		" -type \"float2\" 0.60913587000000002 0.28549623000000002"
+		2 "|Tavern_Bar:polySurface2|Tavern_Bar:polySurfaceShape2" "uvSet[0].uvSetPoints[27]" 
+		" -type \"float2\" 0.58448904999999995 0.28549623000000002"
+		2 "|Tavern_Bar:polySurface2|Tavern_Bar:polySurfaceShape2" "uvSet[0].uvSetPoints[28]" 
+		" -type \"float2\" 0.58448911000000003 0.34283435000000001"
+		2 "|Tavern_Bar:polySurface2|Tavern_Bar:polySurfaceShape2" "uvSet[0].uvSetPoints[29]" 
+		" -type \"float2\" 0.60913587000000002 0.34283447"
 		2 "|Tavern_Bar:polySurface2|Tavern_Bar:polySurfaceShape2" "pnts" " -s 4"
 		2 "|Tavern_Bar:polySurface2|Tavern_Bar:polySurfaceShape2" "pt[2:3]" " -type \"float3\" 0 2.40164210000000011 0 0 2.40164210000000011 0"
 		
@@ -245233,14 +245301,15 @@ createNode reference -n "Tavern_BarRN1";
 	rename -uid "EAEEEB9F-4A43-8E66-09AE-31A21DB79F2F";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"Tavern_BarRN1"
-		"Tavern_BarRN1" 0
 		"Tavern_BarRN1" 4
 		2 "|Tavern_Bar1:polySurface2" "translate" " -type \"double3\" 82.52475739048072967 0 -84.50255817491624555"
 		
 		2 "|Tavern_Bar1:polySurface2" "rotate" " -type \"double3\" 0 90 0"
 		2 "|Tavern_Bar1:polySurface2" "scale" " -type \"double3\" 1 1 0.97018914909277221"
 		
-		2 "|Tavern_Bar1:polySurface2" "rotatePivotTranslate" " -type \"double3\" 0 0 0";
+		2 "|Tavern_Bar1:polySurface2" "rotatePivotTranslate" " -type \"double3\" 0 0 0"
+		
+		"Tavern_BarRN1" 0;
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "StairsRN";
@@ -246635,6 +246704,82 @@ createNode groupId -n "groupId56";
 createNode groupId -n "groupId57";
 	rename -uid "41F38C2C-46C2-D128-B2EE-B2959E7A92F9";
 	setAttr ".ihi" 0;
+createNode reference -n "sharedReferenceNode";
+	rename -uid "1A0A3C74-4A51-074C-23B3-10BEFF08D5B5";
+	setAttr ".ed" -type "dataReferenceEdits" 
+		"sharedReferenceNode";
+createNode reference -n "Tavern_BarRN2";
+	rename -uid "EB1DC09F-4659-D768-458A-BF8D134E5B54";
+	setAttr ".ed" -type "dataReferenceEdits" 
+		"Tavern_BarRN2"
+		"Tavern_BarRN2" 0
+		"Tavern_BarRN2" 32
+		2 "|Tavern_Bar2:polySurface2|Tavern_Bar2:polySurfaceShape2" "uvSet[0].uvSetName" 
+		" -type \"string\" \"map1\""
+		2 "|Tavern_Bar2:polySurface2|Tavern_Bar2:polySurfaceShape2" "uvSet[0].uvSetPoints" 
+		" -s 30"
+		2 "|Tavern_Bar2:polySurface2|Tavern_Bar2:polySurfaceShape2" "uvSet[0].uvSetPoints[0]" 
+		" -type \"float2\" 0.55537628999999999 0.25944644"
+		2 "|Tavern_Bar2:polySurface2|Tavern_Bar2:polySurfaceShape2" "uvSet[0].uvSetPoints[1]" 
+		" -type \"float2\" 0.62786673999999998 0.25944644"
+		2 "|Tavern_Bar2:polySurface2|Tavern_Bar2:polySurfaceShape2" "uvSet[0].uvSetPoints[2]" 
+		" -type \"float2\" 0.62786686000000003 0.48311328999999997"
+		2 "|Tavern_Bar2:polySurface2|Tavern_Bar2:polySurfaceShape2" "uvSet[0].uvSetPoints[3]" 
+		" -type \"float2\" 0.55537634999999996 0.48311328999999997"
+		2 "|Tavern_Bar2:polySurface2|Tavern_Bar2:polySurfaceShape2" "uvSet[0].uvSetPoints[4]" 
+		" -type \"float2\" 0.58448904999999995 0.34370255"
+		2 "|Tavern_Bar2:polySurface2|Tavern_Bar2:polySurfaceShape2" "uvSet[0].uvSetPoints[5]" 
+		" -type \"float2\" 0.60913587000000002 0.34370244"
+		2 "|Tavern_Bar2:polySurface2|Tavern_Bar2:polySurfaceShape2" "uvSet[0].uvSetPoints[6]" 
+		" -type \"float2\" 0.60913587000000002 0.28462815000000002"
+		2 "|Tavern_Bar2:polySurface2|Tavern_Bar2:polySurfaceShape2" "uvSet[0].uvSetPoints[7]" 
+		" -type \"float2\" 0.58448904999999995 0.28462827000000002"
+		2 "|Tavern_Bar2:polySurface2|Tavern_Bar2:polySurfaceShape2" "uvSet[0].uvSetPoints[8]" 
+		" -type \"float2\" 0.70122534000000003 0.48311341000000002"
+		2 "|Tavern_Bar2:polySurface2|Tavern_Bar2:polySurfaceShape2" "uvSet[0].uvSetPoints[9]" 
+		" -type \"float2\" 0.62873495000000001 0.48311341000000002"
+		2 "|Tavern_Bar2:polySurface2|Tavern_Bar2:polySurfaceShape2" "uvSet[0].uvSetPoints[10]" 
+		" -type \"float2\" 0.62873495000000001 0.25944644"
+		2 "|Tavern_Bar2:polySurface2|Tavern_Bar2:polySurfaceShape2" "uvSet[0].uvSetPoints[11]" 
+		" -type \"float2\" 0.70122534000000003 0.25944637999999998"
+		2 "|Tavern_Bar2:polySurface2|Tavern_Bar2:polySurfaceShape2" "uvSet[0].uvSetPoints[12]" 
+		" -type \"float2\" 0.67211257999999996 0.34370244"
+		2 "|Tavern_Bar2:polySurface2|Tavern_Bar2:polySurfaceShape2" "uvSet[0].uvSetPoints[13]" 
+		" -type \"float2\" 0.67211257999999996 0.28462809"
+		2 "|Tavern_Bar2:polySurface2|Tavern_Bar2:polySurfaceShape2" "uvSet[0].uvSetPoints[14]" 
+		" -type \"float2\" 0.64746594000000002 0.28462815000000002"
+		2 "|Tavern_Bar2:polySurface2|Tavern_Bar2:polySurfaceShape2" "uvSet[0].uvSetPoints[15]" 
+		" -type \"float2\" 0.64746594000000002 0.34370244"
+		2 "|Tavern_Bar2:polySurface2|Tavern_Bar2:polySurfaceShape2" "uvSet[0].uvSetPoints[16]" 
+		" -type \"float2\" 0.70209348000000005 0.25944637999999998"
+		2 "|Tavern_Bar2:polySurface2|Tavern_Bar2:polySurfaceShape2" "uvSet[0].uvSetPoints[17]" 
+		" -type \"float2\" 0.70209354000000002 0.48311328999999997"
+		2 "|Tavern_Bar2:polySurface2|Tavern_Bar2:polySurfaceShape2" "uvSet[0].uvSetPoints[18]" 
+		" -type \"float2\" 0.67124450000000002 0.34370244"
+		2 "|Tavern_Bar2:polySurface2|Tavern_Bar2:polySurfaceShape2" "uvSet[0].uvSetPoints[19]" 
+		" -type \"float2\" 0.67124450000000002 0.28462815000000002"
+		2 "|Tavern_Bar2:polySurface2|Tavern_Bar2:polySurfaceShape2" "uvSet[0].uvSetPoints[20]" 
+		" -type \"float2\" 0.64833403000000001 0.34370255"
+		2 "|Tavern_Bar2:polySurface2|Tavern_Bar2:polySurfaceShape2" "uvSet[0].uvSetPoints[21]" 
+		" -type \"float2\" 0.64833403000000001 0.28462815000000002"
+		2 "|Tavern_Bar2:polySurface2|Tavern_Bar2:polySurfaceShape2" "uvSet[0].uvSetPoints[22]" 
+		" -type \"float2\" 0.70122534000000003 0.25857824000000001"
+		2 "|Tavern_Bar2:polySurface2|Tavern_Bar2:polySurfaceShape2" "uvSet[0].uvSetPoints[23]" 
+		" -type \"float2\" 0.62873495000000001 0.25857829999999998"
+		2 "|Tavern_Bar2:polySurface2|Tavern_Bar2:polySurfaceShape2" "uvSet[0].uvSetPoints[24]" 
+		" -type \"float2\" 0.70122534000000003 0.48398149000000001"
+		2 "|Tavern_Bar2:polySurface2|Tavern_Bar2:polySurfaceShape2" "uvSet[0].uvSetPoints[25]" 
+		" -type \"float2\" 0.62873495000000001 0.48398149000000001"
+		2 "|Tavern_Bar2:polySurface2|Tavern_Bar2:polySurfaceShape2" "uvSet[0].uvSetPoints[26]" 
+		" -type \"float2\" 0.60913587000000002 0.28549623000000002"
+		2 "|Tavern_Bar2:polySurface2|Tavern_Bar2:polySurfaceShape2" "uvSet[0].uvSetPoints[27]" 
+		" -type \"float2\" 0.58448904999999995 0.28549623000000002"
+		2 "|Tavern_Bar2:polySurface2|Tavern_Bar2:polySurfaceShape2" "uvSet[0].uvSetPoints[28]" 
+		" -type \"float2\" 0.58448911000000003 0.34283435000000001"
+		2 "|Tavern_Bar2:polySurface2|Tavern_Bar2:polySurfaceShape2" "uvSet[0].uvSetPoints[29]" 
+		" -type \"float2\" 0.60913587000000002 0.34283447";
+	setAttr ".ptag" -type "string" "";
+lockNode -l 1 ;
 select -ne :time1;
 	setAttr ".o" 1;
 	setAttr ".unw" 1;
@@ -246658,6 +246803,7 @@ select -ne :defaultRenderingList1;
 	setAttr -s 8 ".r";
 select -ne :defaultTextureList1;
 	setAttr -s 10 ".tx";
+select -ne :lambert1;
 select -ne :standardSurface1;
 	setAttr ".bc" -type "float3" 0.40000001 0.40000001 0.40000001 ;
 	setAttr ".sr" 0.5;
@@ -246980,6 +247126,7 @@ connectAttr "Stools_and_BenchesRNfosterParent1.msg" "Stools_and_BenchesRN.fp";
 connectAttr "Tavern_BarRN.phl[7]" "polyTweak1.ip";
 connectAttr "polyTweak1.out" "transformGeometry1.ig";
 connectAttr "Tavern_BarRN.phl[8]" "transformGeometry3.ig";
+connectAttr "sharedReferenceNode.sr" "Tavern_BarRN1.sr";
 connectAttr "|pCube13|polySurfaceShape4.o" "polySplitRing1.ip";
 connectAttr "pCubeShape13.wm" "polySplitRing1.mp";
 connectAttr "polySplitRing1.out" "polySplitRing2.ip";
