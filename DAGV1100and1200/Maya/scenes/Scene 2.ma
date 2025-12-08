@@ -1,6 +1,6 @@
 //Maya ASCII 2026 scene
 //Name: Scene 2.ma
-//Last modified: Mon, Dec 08, 2025 04:19:30 PM
+//Last modified: Mon, Dec 08, 2025 04:32:58 PM
 //Codeset: 1252
 file -rdi 1 -ns "Mug13" -rfn "MugRN" -op "v=0;" -typ "mayaAscii" "C:/Users/11099963/Documents/GitHub/Essentials/DAGV1100and1200/Maya//scenes/Mug.ma";
 file -rdi 1 -ns "Tavern_Tables_2" -rfn "Tavern_Tables_2RN" -op "v=0;" -typ "mayaAscii"
@@ -39,18 +39,18 @@ fileInfo "product" "Maya 2026";
 fileInfo "version" "2026";
 fileInfo "cutIdentifier" "202507081222-4d6919b75c";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26200)";
-fileInfo "UUID" "8866BF9E-4CEB-FAE3-EC81-7DA92EEE45F6";
+fileInfo "UUID" "93BC81DD-4FD1-124A-C42B-39B19F0FD126";
 fileInfo "license" "education";
 createNode transform -s -n "persp";
 	rename -uid "2F4FEB29-4955-C5FE-E7F3-C8ABE7981416";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 175.29490752095234 50.564524746753804 316.22137570223231 ;
-	setAttr ".r" -type "double3" -5.7383527296206758 27.399999999999913 0 ;
+	setAttr ".t" -type "double3" 111.183359069234 36.054484763100682 103.10194320874311 ;
+	setAttr ".r" -type "double3" -15.938352729621844 50.20000000000114 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "F7B902AF-469D-0CBF-3819-B9A164614C36";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 326.96623571129322;
+	setAttr ".coi" 111.67029482502888;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -240511,7 +240511,7 @@ createNode mesh -n "polySurfaceShape4" -p "pSphere6";
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode fosterParent -n "Tavern_Tables_2RNfosterParent1";
-	rename -uid "FA72BA1C-4A66-1FD4-D382-C08A2528EAA6";
+	rename -uid "A1141F16-488B-F09C-CBE0-C2B1039BBA94";
 createNode transform -n "Table_Middle7" -p "Tavern_Tables_2RNfosterParent1";
 	rename -uid "C43E07CC-4CF6-C4F4-1FF2-11AA0B969BCC";
 	setAttr ".rp" -type "double3" 61.943295676081107 6.1054395014727874 -3.2787364116390094 ;
@@ -243165,7 +243165,7 @@ createNode mesh -n "polySurfaceShape1" -p "Table_Middle3";
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode fosterParent -n "Stools_and_BenchesRNfosterParent1";
-	rename -uid "FC49D4A6-4CC0-53D8-9A10-52B89DB9A03F";
+	rename -uid "B6A7E7CA-48BB-CD0E-B59B-A3BCDB8B4742";
 createNode transform -n "Stool17" -p "Stools_and_BenchesRNfosterParent1";
 	rename -uid "93B726D3-4184-2488-E0E7-A7A1B8B29B53";
 	setAttr ".rp" -type "double3" 56.809720862966081 3.1063687627356185 -3.1101363860282341 ;
