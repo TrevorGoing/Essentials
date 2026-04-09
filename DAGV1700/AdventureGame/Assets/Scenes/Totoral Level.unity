@@ -1147,6 +1147,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: NavPlane
       objectReference: {fileID: 0}
+    - target: {fileID: 6569312992609583861, guid: 43815d7660fd3d34cb8181434f6b97eb, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1416,6 +1420,18 @@ PrefabInstance:
       propertyPath: triggerEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 957484148}
+    - target: {fileID: 2715643739490222988, guid: 35c559b06a0e14a4b86a1bc46653f348, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4022006251113045141, guid: 35c559b06a0e14a4b86a1bc46653f348, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4664398715432199699, guid: 35c559b06a0e14a4b86a1bc46653f348, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4664398715432199699, guid: 35c559b06a0e14a4b86a1bc46653f348, type: 3}
       propertyPath: 'patrolPointList.Array.data[0]'
       value: 
@@ -1424,6 +1440,10 @@ PrefabInstance:
       propertyPath: 'patrolPointList.Array.data[1]'
       value: 
       objectReference: {fileID: 619157385}
+    - target: {fileID: 4749969188975712893, guid: 35c559b06a0e14a4b86a1bc46653f348, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5704101565744872867, guid: 35c559b06a0e14a4b86a1bc46653f348, type: 3}
       propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
@@ -1472,7 +1492,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Skeleton
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 8088197527922311756, guid: 35c559b06a0e14a4b86a1bc46653f348, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 5704101565744872867, guid: 35c559b06a0e14a4b86a1bc46653f348, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
