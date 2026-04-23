@@ -23,6 +23,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/The Journey.unity
     guid: 801d42bfd66ce094cb1a948be575c3c7
+  - enabled: 1
+    path: Assets/Scenes/End Credits.unity
+    guid: bb2df8fb382bd3f408a35a413fc9f8b3
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
