@@ -1,6 +1,6 @@
 //Maya ASCII 2026 scene
 //Name: New Room Project.ma
-//Last modified: Mon, Sep 21, 2026 01:47:20 PM
+//Last modified: Mon, Sep 21, 2026 01:48:20 PM
 //Codeset: 1252
 requires maya "2026";
 requires "stereoCamera" "10.0";
@@ -12,12 +12,12 @@ fileInfo "product" "Maya 2026";
 fileInfo "version" "2026";
 fileInfo "cutIdentifier" "202507081222-4d6919b75c";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26200)";
-fileInfo "UUID" "B00B8C64-4EA3-9C1F-F40A-438370FBB0C2";
+fileInfo "UUID" "5B2948F7-412C-0DB6-0EC0-2FA25CBEC116";
 fileInfo "license" "education";
 createNode transform -s -n "persp";
 	rename -uid "414770A4-4638-58B2-7DB8-40BE25D04AFD";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 37.936041900763769 18.25185397874947 42.864510128813983 ;
+	setAttr ".t" -type "double3" 36.904647774404339 22.190378020088431 42.301469114486331 ;
 	setAttr ".r" -type "double3" -15.338352664923363 758.19999999936249 -1.011811027254607e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "18B093DB-4F98-BA73-314A-3D993EB93ED4";
